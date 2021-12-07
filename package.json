@@ -1,0 +1,50 @@
+{
+  "name": "simple-floating-contact-form",
+  "version": "0.9.0",
+  "author": {
+    "name": "wpserved",
+    "email": "team@wpserved.com",
+    "url:": "https://wpserved.com/"
+  },
+  "private": true,
+  "license": "GPL2",
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ],
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "npm run rmdist && npm run rmbuild && npm run production && npm run production -- --env.mixfile=webpack.build.mix.js && rimraf build/*/resources/blocks/*/*.scss && rimraf build/*/resources/blocks/*/*.js",
+    "rmdist": "rimraf dist",
+    "rmbuild": "rimraf build",
+    "pot": "mkdir -p ./resources/lang && find ./resources ./src -iname '*.php' | xargs xgettext --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=en_US -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -o resources/lang/simple-floating-contact-form.pot && find ./resources -iname '*.blade.php' | xargs xgettext --language=Python --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=en_US -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -j -o resources/lang/simple-floating-contact-form.pot"
+  },
+  "engines": {
+    "node": ">= 12.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.15",
+    "laravel-mix-copy-watched": "^2.0.1",
+    "resolve-url-loader": "2.3.1",
+    "rimraf": "^2.6.3",
+    "sass": "^1.17.4",
+    "sass-loader": "7.*",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1"
+  }
+}

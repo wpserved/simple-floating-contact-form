@@ -1,0 +1,55 @@
+.sfcf-tab {
+  & > input,
+  & > div {
+    display: none;
+  }
+
+  #option-tab1:checked ~ &__panel-1,
+  #option-tab2:checked ~ &__panel-2,
+  #option-tab3:checked ~ &__panel-3 {
+    display: block;
+  }
+
+  &__nav {
+    margin-top: 25px;
+    
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        label {
+          display: block;
+          padding: 15px 25px;
+          border: 1px solid #ddd;
+          border-bottom: 0;
+          background: #ccd0d4;
+          color: #222;
+
+          &:hover {
+            background: rgba($color: #ccd0d4, $alpha: 0.8);
+          }
+
+          &:active {
+            background: transparent;
+          }
+        }
+
+        &:not(:last-child) label {
+           border-right-width: 0; 
+        }
+      }
+    }
+  }
+
+  #option-tab1:checked ~ &__nav &__button-1,
+  #option-tab2:checked ~ &__nav &__button-2,
+  #option-tab3:checked ~ &__nav &__button-3 {
+    label {
+      background: transparent;
+      color: #111;
+    }
+  }
+}

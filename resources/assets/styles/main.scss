@@ -1,0 +1,12 @@
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+@import
+  'base/general',
+  'base/typography';
+
+@import
+  'components/form.scss',
+  'components/main-widget.scss';

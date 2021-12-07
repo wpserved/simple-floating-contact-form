@@ -1,0 +1,21 @@
+.sfcf-form {
+  &-icon {
+    &__wrapper {
+      display: flex;
+
+      .button {
+        margin: auto 1rem auto 0;
+
+        &.--red {
+          color: $c_red;
+          border-color: $c_red;
+        }
+      }
+    }
+
+    &__img {
+      max-width: 40px;
+      max-height: 40px;  
+    }
+  }
+}

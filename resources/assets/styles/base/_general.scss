@@ -1,0 +1,8 @@
+body.--sfcf-opened {
+  overflow: hidden;
+  height: 100vh;
+
+  html & {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "entry": {
+    "main": ["scripts/main.js", "styles/main.scss"],
+    "vendor": ["styles/vendor.scss"],
+    "admin": ["scripts/admin.js", "styles/admin.scss"]
+  },
+  "publicPath": "/wp-content/plugins/simple-floating-contact-form",
+  "devUrl": "http://contact-plugin.test/",
+  "proxyUrl": "http://localhost:3000",
+  "open": false,
+  "watch": ["dist/styles/**/*.css", "dist/scripts/**/*.js", "src/**/*.php", "resources/views/**/*.php"]
+}
