@@ -14,6 +14,7 @@ const pluginResources = path.join(__dirname, 'resources');
 
 mix.copy(`${rootPath}/simple-floating-contact-form.php`, `build/`);
 mix.copy(`${rootPath}/readme.txt`, `build/`);
+mix.copy(`${rootPath}/LICENSE.txt`, `build/`);
 mix.copyDirectory(`${rootPath}/inc`, `build/inc`);
 mix.copyDirectory(`${rootPath}/src`, `build/src`);
 mix.copyDirectory(`${rootPath}/vendor`, `build/vendor`);

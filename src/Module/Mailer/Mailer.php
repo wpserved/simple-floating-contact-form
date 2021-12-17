@@ -58,7 +58,7 @@ if(!class_exists('Mailer')) {
     public function handleForm() {
       $this->validator = createClass('SimpleFloatingContactForm\Module\Validator\Validator');
 
-      $this->data = $_POST;
+      $this->data = $this->validator->sanitizeAllData($_POST);
 
       //Validate inputs
       $valid = $this->validator->validate($this->data['inputs']);

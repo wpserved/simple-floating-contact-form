@@ -3,8 +3,8 @@ Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: simple, contact, popup, form, floating
 Requires at least: 5.4
-Tested up to: 5.4
-Stable tag: 5.4
+Tested up to: 5.8
+Stable tag: 1.0.0
 Requires PHP: 7.2
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
