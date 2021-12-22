@@ -8,6 +8,8 @@
  * Text Domain: simple-floating-contact-form
  * Domain Path: /resources/lang
  * Version: 1.0.0
+ * Requires at least: 5.4
+ * Requires PHP: 7.2
  */
 
 define('SIMPLE_FLOATING_CONTACT_FORM_BASENAME', plugin_basename(__FILE__));
