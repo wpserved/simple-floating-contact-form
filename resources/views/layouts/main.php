@@ -111,7 +111,7 @@ $displayOptions = new Display();
         background-color: rgba(var(--border));
       }
 
-      span {
+      #sfcf_contact_popup span {
         color: rgba(var(--light));
       }
 
