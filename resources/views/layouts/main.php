@@ -168,7 +168,7 @@ $displayOptions = new Display();
             <fieldset class="checkboxes">
               <label>
                 <input type="checkbox" name="policy" data-required>
-                <span class="text"><?php echo esc_html($this->notes['checkbox']); ?></span>
+                <span class="text"><?php echo wp_kses($this->notes['checkbox'], ['a' => ['href' => [], 'target' => []]]); ?></span>
               </label>
             </fieldset>
             <fieldset>

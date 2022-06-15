@@ -118,6 +118,9 @@ $display = new Display();
               <fieldset>
                 <textarea type="textarea" rows="5" cols="50" id="sfcf-form-checkbox" name="sfcf-form-checkbox" class="large-text code"><?php echo esc_textarea(get_option('sfcf-form-checkbox')); ?></textarea>
               </fieldset>
+              <p class="description">
+                <small><?php echo __('You can use the shortcode:', 'simple-floating-contact-form'); ?> [sfcf_link url=# title=FooBoo target_blank=1]</small>
+              </p>
             </td>
           </tr>
 

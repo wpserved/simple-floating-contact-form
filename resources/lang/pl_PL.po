@@ -7,22 +7,253 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-02 11:22+0200\n"
-"PO-Revision-Date: 2020-07-02 11:25+0200\n"
+"POT-Creation-Date: 2022-06-13 12:51+0200\n"
+"PO-Revision-Date: 2022-06-13 12:54+0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
-"Last-Translator: \n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.1\n"
 
-#: resources/views/admin/settings/general/index.php:2
+#: resources/views/admin/settings/general/index.php:19
+#: src/Settings/Pages/General.php:17
+msgid "Simple Floating Contact Form"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:42
+msgid "Email settings"
+msgstr "Ustawienia email"
+
+#: resources/views/admin/settings/general/index.php:47
+msgid "Email recipent(s)"
+msgstr "Odbiorcy email"
+
+#: resources/views/admin/settings/general/index.php:51
+msgid ""
+"Enter the email address (or several separated by a comma) to which you want "
+"to send the message."
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:57
+msgid "Form settings"
+msgstr "Ustawienia formularza"
+
+#: resources/views/admin/settings/general/index.php:62
+msgid "Toggle button text (on hover)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:71
+msgid "Form title"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:80
+msgid "Name and Surname label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:89
+msgid "Email address label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:98
+msgid "Email subject label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:107
+msgid "Message label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:116
+msgid "Checkbox label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:122
+msgid "You can use the shortcode:"
+msgstr "Możesz użyć shortcodu:"
+
+#: resources/views/admin/settings/general/index.php:128
+msgid "Submit label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:137
+msgid "Form icon"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:147
+msgid ""
+"Choose the icon which will occur in the pop up activation button (40px on "
+"40px size, .png or .svg preferred)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:152
+msgid "Success page settings"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:157
+msgid "Success page title"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:167
+msgid "Success page message"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:176
+msgid "Success page button label"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:185
+msgid "Button's link"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:192
+msgid "Styling options (optional)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:197
+msgid "Choose styling option"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:214
+msgid "Color Settings"
+msgstr "Ustawienia koloru"
+
+#: resources/views/admin/settings/general/index.php:219
+msgid "Toggle color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:228
+msgid "Background color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:237
+msgid "Text color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:246
+msgid "Input text color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:255
+msgid "Input text color (on focus)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:264
+msgid "Input border color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:273
+msgid "Buttons color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:282
+msgid "Buttons text color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:294
+msgid "Display Settings"
+msgstr "Ogólne Ustawienia"
+
+#: resources/views/admin/settings/general/index.php:300
+msgid "Display on custom home/front pages"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:352
+msgid "Display on home page"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:380
+msgid "Display on pages"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:416
+msgid "Display on post types (single posts)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:444
+msgid "Display on post types (archive pages)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:484
+msgid "Display on categories (category page)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:522
+msgid "Display on tags (tag page)"
+msgstr ""
+
 #: src/Settings/Pages/General.php:17
 msgid "General Settings"
 msgstr "Ogólne Ustawienia"
 
-#: src/Settings/Pages/General.php:17
-msgid "Contact Popup"
-msgstr "Popup Kontaktowy"
+#: src/Core/Config.php:78
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: src/Module/Validator/Validator.php:84 src/Module/Validator/Validator.php:92
+msgid "This field is required"
+msgstr ""
+
+#: src/Module/Validator/Validator.php:86
+msgid "Email address must be valid"
+msgstr ""
+
+#: src/Module/Mailer/Mailer.php:112
+msgid "Your message was sent"
+msgstr ""
+
+#: src/Module/Mailer/Mailer.php:114
+msgid "Ups! Something weng wrong!"
+msgstr ""
+
+#: src/Module/Display/Display.php:55
+msgid "Need a help?"
+msgstr ""
+
+#: src/Module/Display/Display.php:56
+msgid "Contact us to get a quick help."
+msgstr ""
+
+#: src/Module/Display/Display.php:57
+msgid "Name & Surname / Company name"
+msgstr ""
+
+#: src/Module/Display/Display.php:58
+msgid "E-mail adress"
+msgstr ""
+
+#: src/Module/Display/Display.php:59
+msgid "Message Subject"
+msgstr ""
+
+#: src/Module/Display/Display.php:60
+msgid "Your Message"
+msgstr ""
+
+#: src/Module/Display/Display.php:61
+msgid ""
+"I have read and accept the Terms of Service & Privacy Policy*. I consent to "
+"processing my data by Indeon Sp. z o.o. for marketing purposes, including "
+"sending emails."
+msgstr ""
+
+#: src/Module/Display/Display.php:62
+msgid "Send Message"
+msgstr ""
+
+#: src/Module/Display/Display.php:64
+msgid "Your message was sent."
+msgstr ""
+
+#: src/Module/Display/Display.php:65
+msgid "We will contact you soon!<br><b>In the meantime check out:</b>"
+msgstr ""
+
+#: src/Module/Display/Display.php:66
+msgid "Check other page"
+msgstr ""
+
+#~ msgid "Contact Popup"
+#~ msgstr "Popup Kontaktowy"
