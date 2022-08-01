@@ -116,10 +116,11 @@ $display = new Display();
             <th scope="row"><label for="sfcf-form-checkbox"><?php echo esc_html(__('Checkbox label', 'simple-floating-contact-form')); ?>:</label></th>
             <td>
               <fieldset>
-                <textarea type="textarea" rows="5" cols="50" id="sfcf-form-checkbox" name="sfcf-form-checkbox" class="large-text code"><?php echo esc_textarea(get_option('sfcf-form-checkbox')); ?></textarea>
+                <textarea type="textarea" rows="5" cols="50" id="sfcf-form-checkbox" name="sfcf-form-checkbox" class="large-text code" placeholder="<?php echo __('I have read and accept the Terms of Service & Privacy Policy.', 'simple-floating-contact-form'); ?>"><?php echo esc_textarea(get_option('sfcf-form-checkbox')); ?></textarea>
               </fieldset>
               <p class="description">
-                <small><?php echo __('You can use the shortcode:', 'simple-floating-contact-form'); ?> [sfcf_link url=# title=FooBoo target_blank=1]</small>
+                <small><?php echo __('Leave empty to hide this field in the form.', 'simple-floating-contact-form') ?></small>
+                <small><?php echo __('To link something, you can use the shortcode:', 'simple-floating-contact-form'); ?> [sfcf_link url=# title=FooBoo target_blank=1]</small>
               </p>
             </td>
           </tr>
