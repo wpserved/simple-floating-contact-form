@@ -3,8 +3,8 @@ Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: contact form, floating form, popup contact form, floating contact form, contact button, simple contact form
 Requires at least: 5.4
-Tested up to: 5.9.1
-Stable tag: 1.1.0
+Tested up to: 6.0
+Stable tag: 1.2.0
 Requires PHP: 7.2
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -32,6 +32,12 @@ You can find more information [here](https://wpserved.com/plugins/simple-floatin
 You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/simple-floating-contact-form).
 
 == Changelog ==
+= 1.2.0 =
+Add the possibility to hide the agreement checkbox by leaving it empty
+
+= 1.1.1 =
+Update the "Tested up to" value
+
 = 1.1.0 =
 Add possibility to link text in the checkbox label
 

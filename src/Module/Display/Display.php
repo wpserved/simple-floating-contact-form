@@ -58,7 +58,7 @@ class Display
     $this->notes['input_2']       = get_option('sfcf-form-email-input') ?: __('E-mail adress', 'simple-floating-contact-form');
     $this->notes['input_3']       = get_option('sfcf-form-email-subject') ?: __('Message Subject', 'simple-floating-contact-form');
     $this->notes['input_4']       = get_option('sfcf-form-email-message') ?: __('Your Message', 'simple-floating-contact-form');
-    $this->notes['checkbox']      = get_option('sfcf-form-checkbox') ? $this->shortcode->doShortcodesInContent(get_option('sfcf-form-checkbox', '')) : __('I have read and accept the Terms of Service & Privacy Policy*. I consent to processing my data by Indeon Sp. z o.o. for marketing purposes, including sending emails.', 'simple-floating-contact-form');
+    $this->notes['checkbox']      = get_option('sfcf-form-checkbox') ? $this->shortcode->doShortcodesInContent(get_option('sfcf-form-checkbox', '')) : '';
     $this->notes['submit']        = get_option('sfcf-form-submit') ?: __('Send Message', 'simple-floating-contact-form');
     $this->notes['icon']          = get_option('sfcf-form-icon') ?: SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/icon-support.svg';
     $this->notes['success_title'] = get_option('sfcf-success-title') ?: __('Your message was sent.', 'simple-floating-contact-form');

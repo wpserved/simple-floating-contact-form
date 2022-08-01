@@ -165,12 +165,16 @@ $displayOptions = new Display();
             <fieldset>
               <textarea rows="5" name="message" placeholder="<?php echo esc_attr($this->notes['input_4']); ?>" data-required></textarea>
             </fieldset>
-            <fieldset class="checkboxes">
-              <label>
-                <input type="checkbox" name="policy" data-required>
-                <span class="text"><?php echo wp_kses($this->notes['checkbox'], ['a' => ['href' => [], 'target' => []]]); ?></span>
-              </label>
-            </fieldset>
+
+            <?php if (! empty($this->notes['checkbox'])): ?>
+              <fieldset class="checkboxes">
+                <label>
+                  <input type="checkbox" name="policy" data-required>
+                  <span class="text"><?php echo wp_kses($this->notes['checkbox'], ['a' => ['href' => [], 'target' => []]]); ?></span>
+                </label>
+              </fieldset>
+            <?php endif; ?>
+
             <fieldset>
               <input type="submit" value="<?php echo esc_attr($this->notes['submit']); ?>" />
             </fieldset>
@@ -181,7 +185,7 @@ $displayOptions = new Display();
           <div class="sfcf-success__icon">
             <img src="<?php echo esc_url(SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/success.svg'); ?>" alt="success" />
           </div>
-          <p><?php echo esc_html($this->notes['success_note']); ?></p>
+          <p><?php echo wp_kses($this->notes['success_note'], ['b' => [], 'br' => []]); ?></p>
           <div class="sfcf-success__btn">
             <a href="<?php echo esc_url($this->notes['success_url']); ?>" class="sfcf__button"><?php echo esc_html($this->notes['success_btn']); ?></a>
           </div>
