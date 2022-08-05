@@ -46,8 +46,6 @@ class Shortcode
 
   public function doShortcodesInContent(string $content): string
   {
-    $content = esc_html($content);
-
     if (empty($this->shortcodeTags)) {
       return $content;
     }
