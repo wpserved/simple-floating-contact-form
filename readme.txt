@@ -3,8 +3,8 @@ Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: contact form, floating form, popup contact form, floating contact form, contact button, simple contact form
 Requires at least: 5.4
-Tested up to: 6.0
-Stable tag: 1.2.1
+Tested up to: 6.1
+Stable tag: 1.2.3
 Requires PHP: 7.2
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -13,25 +13,49 @@ Simple Floating Contact Form is a simple tool to build website visitor engagemen
 
 == Description ==
 
-Simple Floating Contact Form is a simple tool to build website visitor engagement. The main purpose of this plugin is to allow visitors to contact the owners of the website using a simple form available from the button located in the lower right corner of the website.
+= This lightweight plugin was designed to make your work easier. It’s simple. It’s quick. =
 
-== How it works ==
+[Simple Floating Contact Form](https://simple-contact.com/?utm_source=simple_contact_plugin&utm_medium=wp_repo_desc&utm_campaign=wpserved_plugins&utm_id=wpserved_plugins) is a super easy to use, secure, plug and play floating contact form for your WordPress website. 
 
-On front side of your page, after clicking on toggle button, the contact form box with appear right away, from right side on your page. The form consists of title, input fields, condition checkbox and submit button.
-Visitors will receive a thank you message in which you can configure title, message and CTA button.
+- Crafted by experienced UX designers so you get expected business results.
+- No configuration required to start collecting messages from your website visitors. 
+- Flexible and easy to understand settings - for every single detail of your form.
+- Styling options include flexible color settings, custom icon upload and more.
+- You have full control over where the form is displayed.
 
-In the plugin's admin panel there are three types of options:
-1. General, where you define the general settings of the plugin like recipients of the tickets, the form input data etc.
-2. Styles, where you can set custom colors for various form elements.
-3. Display Select on which pages or post types our form will be rendered.
+= How to use the Simple Floating Contact Form plugin? =
 
-You can find more information [here](https://wpserved.com/plugins/simple-floating-contact-form/).
+- After installation you need to Activate the plugin.
+- Right after activation your plugin is ready to use and collects messages from your website. It’s that simple!
+- You can navigate to the Settings > Simple Floating Contact Form section in your WordPress Admin area, and customize or translate every single text information or text label of the form. 
+- In the Display tab within the plugin settings page you can decide where you want to display your form.
 
-== Source files ==
+= Core Features =
 
-You can find plugin's source files on our GitHub repo [page](https://github.com/wpserved/simple-floating-contact-form).
+- **Plug & Play** - Right after the installation plugin works with default settings and no further configuration is required to get form submissions and receive emails from your clients, or community members.
+- **Developer friendly plugin** - You can easily disable the plugin CSS code and overwrite it with your own, custom made styles.
+- **Easy to customize** - You can change all texts and colors in the plugin settings, you can overwrite default styles with your own custom made code, you can easily integrate the form style with [Astratic WordPress theme](https://astratic.com/?utm_source=simple_contact_plugin&utm_medium=wp_repo_desc&utm_campaign=wpserved_plugins&utm_id=wpserved_plugins) settings.
+
+= If you like this plugin =
+
+If you like this plugin, leave us a rating or review. Thank you! :-)
+
+= Join The Team =
+
+You can find the plugin’s source code on our GitHub repo page. Feel free to play around with the code and to contribute.
+
+== Screenshots ==
+
+1. So Simple! Sooo Easy!
 
 == Changelog ==
+= 1.2.3 =
+Add new plugin Description
+Add plugin screenshot
+
+= 1.2.2 =
+Fix CSS problems with the popup form
+
 = 1.2.1 =
 Fix problem with link shortcode
 

@@ -18,6 +18,7 @@
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
+          align-items: center;
 
           .text {
             flex-basis: calc(100% - 16px);
@@ -26,6 +27,11 @@
             line-height: 16px;
           }
         }
+      }
+
+      & > * {
+        box-sizing: border-box;
+        margin: 0;
       }
     }
 
@@ -112,9 +118,13 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e6a7', endColorstr='#00e55f',GradientType=1 );
       will-change: background-position,color;
       transition: background-position 0.45s,color 0.45s;
+      border: 2px solid transparent;
+      cursor: pointer;
 
       &:hover,
       &:focus {
+        text-decoration: none;
+        border-color: white;
         background-position: 100%;
       }
 
@@ -169,7 +179,7 @@
       transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
       will-change: opacity, visibility;
       padding: 0 25px 26px;
-      overflow: auto;
+      overflow: hidden;
       position: relative;
       height: 100%;
     }

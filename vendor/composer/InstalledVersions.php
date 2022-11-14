@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'c026a8d8e8fe4468e33ef71aa0f2fbebe0d0af80',
+    'reference' => '9e7d1676a94ed3c6b64f97212453c5a7243d33f5',
     'name' => 'wps/simple-floating-contant-form',
   ),
   'versions' => 
@@ -180,7 +180,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'c026a8d8e8fe4468e33ef71aa0f2fbebe0d0af80',
+      'reference' => '9e7d1676a94ed3c6b64f97212453c5a7243d33f5',
     ),
   ),
 );
