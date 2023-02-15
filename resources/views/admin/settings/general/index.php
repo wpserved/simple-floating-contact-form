@@ -11,8 +11,8 @@ $display = new Display();
   <?php if (get_option('stylesheet') !== 'astratic-child' && get_option('stylesheet') !== 'astratic'):
     if(get_option('sfcf-no-styling-option') == "customizer"):?>
     <div class="error notice-error">
-    <h3>ERROR</h3>
-    <p><strong>Astratic Theme not detected - choose style option</strong></p>
+    <h3><?php _e('ERROR', 'simple-floating-contact-form'); ?></h3>
+    <p><strong><?php _e('Astratic Theme not detected - choose style option', 'simple-floating-contact-form'); ?></strong></p>
     </div>
   <?php endif;
   endif; ?>
@@ -27,13 +27,13 @@ $display = new Display();
       <nav class="sfcf-tab__nav">
         <ul>
           <li class="sfcf-tab__button-1">
-            <label for="option-tab1">General</label>
+            <label for="option-tab1"><?php _e('General', 'simple-floating-contact-form'); ?></label>
           </li>
           <li class="sfcf-tab__button-2">
-            <label for="option-tab2">Style</label>
+            <label for="option-tab2"><?php _e('Style', 'simple-floating-contact-form'); ?></label>
           </li>
           <li class="sfcf-tab__button-3">
-            <label for="option-tab3">Display</label>
+            <label for="option-tab3"><?php _e('Display', 'simple-floating-contact-form'); ?></label>
           </li>
         </ul>
       </nav>
@@ -119,7 +119,7 @@ $display = new Display();
                 <textarea type="textarea" rows="5" cols="50" id="sfcf-form-checkbox" name="sfcf-form-checkbox" class="large-text code" placeholder="<?php echo __('I have read and accept the Terms of Service & Privacy Policy.', 'simple-floating-contact-form'); ?>"><?php echo esc_textarea(get_option('sfcf-form-checkbox')); ?></textarea>
               </fieldset>
               <p class="description">
-                <small><?php echo __('Leave empty to hide this field in the form.', 'simple-floating-contact-form') ?></small>
+                <small><?php echo __('Leave empty to hide this field in the form.', 'simple-floating-contact-form'); ?></small>
                 <small><?php echo __('To link something, you can use the shortcode:', 'simple-floating-contact-form'); ?> [sfcf_link url=# title=FooBoo target_blank=1]</small>
               </p>
             </td>
@@ -199,12 +199,12 @@ $display = new Display();
             <td>
               <fieldset>
                 <input type="radio" class="regular-text" id="sfcf-no-styling-option-false" name="sfcf-no-styling-option" value="false" <?php if (get_option('sfcf-no-styling-option') == "false" || get_option('sfcf-no-styling-option') == "" ) { echo "checked"; }; ?>>
-                <label for="sfcf-no-styling-option-false">Default stylesheet (with in-plugin styling option)</label><br>
+                <label for="sfcf-no-styling-option-false"><?php _e('Default stylesheet (with in-plugin styling option)', 'simple-floating-contact-form'); ?></label><br>
                 <input type="radio" class="regular-text" id="sfcf-no-styling-option-true" name="sfcf-no-styling-option" value="true" <?php if (get_option('sfcf-no-styling-option') == "true") { echo "checked"; }; ?>>
-                <label for="sfcf-no-styling-option-true">Custom stylesheet (prepared by developer, without in-plugin styling option)</label><br>
+                <label for="sfcf-no-styling-option-true"><?php _e('Custom stylesheet (prepared by developer, without in-plugin styling option)', 'simple-floating-contact-form'); ?></label><br>
                 <?php if (get_option('stylesheet') == 'astratic-child' || get_option('stylesheet') == 'astratic'): ?>
                   <input type="radio" class="regular-text" id="sfcf-no-styling-option-customizer" name="sfcf-no-styling-option" value="customizer" <?php if (get_option('sfcf-no-styling-option') == "customizer") { echo "checked"; }; ?>>
-                  <label for="sfcf-no-styling-option-customizer"><strong>Match colors with the Astratic Theme</strong></label>
+                  <label for="sfcf-no-styling-option-customizer"><strong><?php _e('Match colors with the Astratic Theme', 'simple-floating-contact-form'); ?></strong></label>
                 <?php endif; ?>
               </fieldset>
             </td>
@@ -319,7 +319,7 @@ $display = new Display();
                       <label
                         for="sfcf-display-custom[id-<?php echo esc_attr(get_post(get_option('page_on_front'))->ID); ?>]"
                       >
-                        <?php echo esc_html(get_post(get_option('page_on_front'))->post_title); ?> (front page)
+                        <?php echo esc_html(get_post(get_option('page_on_front'))->post_title); ?> <?php _e('(front page)', 'simple-floating-contact-form'); ?>
                       </label>
                     </div>
                   <?php endif; ?>
@@ -341,7 +341,7 @@ $display = new Display();
                       <label
                         for="sfcf-display-custom[id-<?php echo esc_attr(get_post(get_option('page_for_posts'))->ID); ?>]"
                       >
-                        <?php echo esc_html(get_post(get_option('page_for_posts'))->post_title); ?> (page for posts)
+                        <?php echo esc_html(get_post(get_option('page_for_posts'))->post_title); ?> <?php _e('(page for posts)', 'simple-floating-contact-form'); ?>
                       </label>
                     </div>
                   <?php endif; ?>
@@ -368,7 +368,7 @@ $display = new Display();
                     <label
                       for="sfcf-display-custom[default-home]"
                     >
-                      Default home page
+                      <?php _e('Default home page', 'simple-floating-contact-form'); ?>
                     </label>
                   </div>
                 </fieldset>
