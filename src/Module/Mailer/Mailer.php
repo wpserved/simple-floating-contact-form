@@ -144,7 +144,7 @@ if(!class_exists('Mailer')) {
       $messageContent = ob_get_contents();
       ob_end_clean();
 
-      if($messageContent) {
+      if(! empty($messageContent)) {
         return $messageContent;
       } else {
         //set default email message
