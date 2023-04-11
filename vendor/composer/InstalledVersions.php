@@ -25,33 +25,33 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => '9e7d1676a94ed3c6b64f97212453c5a7243d33f5',
+    'reference' => '1811d39c861f7398cdfc1d91bfcdc06dc48034a0',
     'name' => 'wps/simple-floating-contant-form',
   ),
   'versions' => 
   array (
     'composer/installers' => 
     array (
-      'pretty_version' => 'v1.9.0',
-      'version' => '1.9.0.0',
+      'pretty_version' => 'v1.12.0',
+      'version' => '1.12.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b93bcf0fa1fccb0b7d176b0967d969691cd74cca',
+      'reference' => 'd20a64ed3c94748397ff5973488761b22f6d3f19',
     ),
     'doctrine/inflector' => 
     array (
-      'pretty_version' => '1.4.3',
-      'version' => '1.4.3.0',
+      'pretty_version' => '1.4.4',
+      'version' => '1.4.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4650c8b30c753a76bf44fb2ed00117d6f367490c',
+      'reference' => '4bd5c1cdfcd00e9e2d8c484f79150f67e5d355d9',
     ),
     'illuminate/contracts' => 
     array (
@@ -100,12 +100,12 @@ private static $installed = array (
     ),
     'psr/container' => 
     array (
-      'pretty_version' => '1.0.0',
-      'version' => '1.0.0.0',
+      'pretty_version' => '1.1.2',
+      'version' => '1.1.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
+      'reference' => '513e0666f7216c7459170d56df27dfcefe1689ea',
     ),
     'psr/simple-cache' => 
     array (
@@ -141,46 +141,55 @@ private static $installed = array (
     ),
     'symfony/polyfill-mbstring' => 
     array (
-      'pretty_version' => 'v1.17.1',
-      'version' => '1.17.1.0',
+      'pretty_version' => 'v1.27.0',
+      'version' => '1.27.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7110338d81ce1cbc3e273136e4574663627037a7',
+      'reference' => '8ad114f6b39e2c98a8b0e3bd907732c207c2b534',
+    ),
+    'symfony/polyfill-php80' => 
+    array (
+      'pretty_version' => 'v1.27.0',
+      'version' => '1.27.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936',
     ),
     'symfony/translation' => 
     array (
-      'pretty_version' => 'v4.4.10',
-      'version' => '4.4.10.0',
+      'pretty_version' => 'v4.4.47',
+      'version' => '4.4.47.0',
       'aliases' => 
       array (
       ),
-      'reference' => '79d3ef9096a6a6047dbc69218b68c7b7f63193af',
+      'reference' => '45036b1d53accc48fe9bab71ccd86d57eba0dd94',
     ),
     'symfony/translation-contracts' => 
     array (
-      'pretty_version' => 'v2.1.2',
-      'version' => '2.1.2.0',
+      'pretty_version' => 'v2.5.2',
+      'version' => '2.5.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e5ca07c8f817f865f618aa072c2fe8e0e637340e',
+      'reference' => '136b19dd05cdf0709db6537d058bcab6dd6e2dbe',
     ),
     'symfony/translation-implementation' => 
     array (
       'provided' => 
       array (
-        0 => '1.0',
+        0 => '1.0|2.0',
       ),
     ),
     'wps/simple-floating-contant-form' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => '9e7d1676a94ed3c6b64f97212453c5a7243d33f5',
+      'reference' => '1811d39c861f7398cdfc1d91bfcdc06dc48034a0',
     ),
   ),
 );
@@ -406,7 +415,7 @@ $installed = array();
 
 if (self::$canGetVendors) {
 
- foreach (ClassLoader::getRegisteredLoaders() as $vendorDir => $loader) {
+foreach (ClassLoader::getRegisteredLoaders() as $vendorDir => $loader) {
 if (isset(self::$installedByVendor[$vendorDir])) {
 $installed[] = self::$installedByVendor[$vendorDir];
 } elseif (is_file($vendorDir.'/composer/installed.php')) {
