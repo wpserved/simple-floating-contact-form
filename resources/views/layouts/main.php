@@ -90,6 +90,11 @@ $displayOptions = new Display();
         background: <?php echo esc_html($this->notes['color_btn']); ?>;
         color: <?php echo esc_html($this->notes['color_btn_text']); ?>;
       }
+
+      #sfcf_contact_popup .sfcf-form__success h2,
+      #sfcf_contact_popup .sfcf-form__success p {
+        color: <?php echo esc_html($this->notes['color_text']); ?>;
+      }
     </style>
     <?php endif; ?>
     <?php if ($this->notes['no_style'] == "customizer") : ?>

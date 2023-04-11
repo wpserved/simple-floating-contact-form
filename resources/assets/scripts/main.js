@@ -83,8 +83,6 @@ jQuery(function($) {
           let val = $(elem).val();
           let type = elem.getAttribute('type');
 
-          console.log(type);
-
           if ($elem.hasClass($errorClass)) {
             $(elem).removeClass($errorClass);
           }

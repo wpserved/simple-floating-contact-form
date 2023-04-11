@@ -23,7 +23,7 @@ class Validator
 
     try {
       $sanitized['action'] = $this->sanitize($data['action'] ?? '');
-      $sanitized['page'] = $this->sanitize($data['action'] ?? '', 'url');
+      $sanitized['page'] = $this->sanitize($data['page'] ?? '', 'url');
 
       $sanitized['inputs'] = array_map( function($field) {
         $name = $this->sanitize($field['name']);
