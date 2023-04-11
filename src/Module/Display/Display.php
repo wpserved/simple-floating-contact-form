@@ -78,6 +78,7 @@ class Display
     $this->notes['color_terms_link'] = get_option('sfcf-color-terms-link') ?: '#03E2AB';
     $this->notes['color_btn'] = get_option('sfcf-color-btn') ?: '#03E2AB';
     $this->notes['color_btn_text'] = get_option('sfcf-color-btn-text') ?: '#FFF';
+    $this->notes['color_btn_border_hover'] = get_option('sfcf-color-btn-border-hover') ?: '#03E2AB';
   
     $this->notes['display_pages'] = get_option('sfcf-display-pages') ?: '';
     $this->notes['display_posts'] = get_option('sfcf-display-posts') ?: '';

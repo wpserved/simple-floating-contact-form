@@ -305,6 +305,15 @@ $display = new Display();
               </fieldset>
             </td>
           </tr>
+
+          <tr valign="top">
+            <th scope="row"><label for="sfcf-color-btn-border-hover"><?php echo esc_html(__('Buttons border color', 'simple-floating-contact-form')); ?>:</label></th>
+            <td>
+              <fieldset>
+                <input type="text" class="regular-text sfcf-color" id="sfcf-color-btn-border-hover" name="sfcf-color-btn-border-hover" value="<?php echo esc_attr($display->printData()['color_btn_border_hover']); ?>" data-default-color="#03E2AB"/>
+              </fieldset>
+            </td>
+          </tr>
         </table>
         <?php endif; ?>
       </div>

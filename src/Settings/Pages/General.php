@@ -102,6 +102,9 @@ class General
     add_option('sfcf-color-btn-text', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-text');
 
+    add_option('sfcf-color-btn-border-hover', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-border-hover');
+
     add_option('sfcf-display-custom', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-display-custom',);
 

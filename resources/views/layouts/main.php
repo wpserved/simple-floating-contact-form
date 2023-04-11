@@ -48,7 +48,7 @@ $displayOptions = new Display();
       }
 
       #sfcf_contact_popup form .checkboxes .text a:hover {
-        text-decoration: none;        
+        text-decoration: none;
       }
 
       #sfcf_contact_popup span {
@@ -70,6 +70,12 @@ $displayOptions = new Display();
       #sfcf_contact_popup form input[type=submit] {
         background: <?php echo esc_html($this->notes['color_btn']); ?>;
         color: <?php echo esc_html($this->notes['color_btn_text']); ?>;
+        transition: all .35s ease-in-out;
+      }
+
+      #sfcf_contact_popup form input[type=submit]:hover,
+      #sfcf_contact_popup form input[type=submit]:focus {
+        border-color: <?php echo esc_html($this->notes['color_btn_border_hover']); ?>;
       }
 
       #sfcf_contact_popup .sfcf__toggler {
