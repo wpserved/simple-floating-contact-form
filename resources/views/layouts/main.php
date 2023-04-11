@@ -69,7 +69,7 @@ $displayOptions = new Display();
       }
 
       #sfcf_contact_popup .sfcf__toggler .toggler__label {
-        color: <?php echo esc_html($this->notes['color_text']); ?>;
+        color: <?php echo esc_html($this->notes['color_toggler_text']); ?>;
       }
 
       #sfcf_contact_popup .sfcf__button {

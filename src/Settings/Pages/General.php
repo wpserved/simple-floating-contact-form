@@ -75,6 +75,9 @@ class General
     add_option('sfcf-color-toggle', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggle');
 
+    add_option('sfcf-color-toggler-text', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggler-text');
+
     add_option('sfcf-color-bg', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-bg');
 

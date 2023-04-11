@@ -226,6 +226,15 @@ $display = new Display();
           </tr>
 
           <tr valign="top">
+            <th scope="row"><label for="sfcf-color-toggler-text"><?php echo esc_html(__('Toggler text color', 'simple-floating-contact-form')); ?>:</label></th>
+            <td>
+              <fieldset>
+                <input type="text" class="regular-text sfcf-color" id="sfcf-color-toggler-text" name="sfcf-color-toggler-text" value="<?php echo esc_attr($display->printData()['color_toggler_text']); ?>" data-default-color="#FFF"/>
+              </fieldset>
+            </td>
+          </tr>
+
+          <tr valign="top">
             <th scope="row"><label for="sfcf-color-bg"><?php echo esc_html(__('Background color', 'simple-floating-contact-form')); ?>:</label></th>
             <td>
               <fieldset>
