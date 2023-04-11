@@ -93,6 +93,9 @@ class General
     add_option('sfcf-color-input-border', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-border');
 
+    add_option('sfcf-color-terms-link', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-terms-link');
+
     add_option('sfcf-color-btn', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn');
 

@@ -280,6 +280,15 @@ $display = new Display();
           </tr>
 
           <tr valign="top">
+            <th scope="row"><label for="sfcf-color-terms-link"><?php echo esc_html(__('Terms link color', 'simple-floating-contact-form')); ?>:</label></th>
+            <td>
+              <fieldset>
+                <input type="text" class="regular-text sfcf-color" id="sfcf-color-terms-link" name="sfcf-color-terms-link" value="<?php echo esc_attr($display->printData()['color_terms_link']); ?>" data-default-color="#03E2AB"/>
+              </fieldset>
+            </td>
+          </tr>
+
+          <tr valign="top">
             <th scope="row"><label for="sfcf-color-btn"><?php echo esc_html(__('Buttons color', 'simple-floating-contact-form')); ?>:</label></th>
             <td>
               <fieldset>

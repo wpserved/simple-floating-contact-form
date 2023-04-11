@@ -75,6 +75,7 @@ class Display
     $this->notes['color_input_text'] = get_option('sfcf-color-input-text') ?: '#222';
     $this->notes['color_input_text_focus'] = get_option('sfcf-color-input-text-focus') ?: '#6835CC';
     $this->notes['color_input_border'] = get_option('sfcf-color-input-border') ?: '#03E2AB';
+    $this->notes['color_terms_link'] = get_option('sfcf-color-terms-link') ?: '#03E2AB';
     $this->notes['color_btn'] = get_option('sfcf-color-btn') ?: '#03E2AB';
     $this->notes['color_btn_text'] = get_option('sfcf-color-btn-text') ?: '#FFF';
   

@@ -43,6 +43,14 @@ $displayOptions = new Display();
         background-color: <?php echo esc_html($this->notes['color_input_border']); ?>;
       }
 
+      #sfcf_contact_popup form .checkboxes .text a {
+        color: <?php echo esc_html($this->notes['color_terms_link']); ?>
+      }
+
+      #sfcf_contact_popup form .checkboxes .text a:hover {
+        text-decoration: none;        
+      }
+
       #sfcf_contact_popup span {
         color: <?php echo esc_html($this->notes['color_text']); ?>;
       }
