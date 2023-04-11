@@ -3,7 +3,7 @@
 ## Description
 This lightweight plugin was designed to make your work easier. It’s simple. It’s quick.
 
-[Simple Floating Contact Form](https://simple-contact.com/?utm_source=simple_contact_plugin&utm_medium=wp_repo_desc&utm_campaign=wpserved_plugins&utm_id=wpserved_plugins) is a super easy to use, secure, plug and play floating contact form for your WordPress website. 
+Simple Floating Contact Form is a super easy to use, secure, plug and play floating contact form for your WordPress website. 
 
 - Crafted by experienced UX designers so you get expected business results.
 - No configuration required to start collecting messages from your website visitors. 
