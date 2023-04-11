@@ -100,68 +100,68 @@ $displayOptions = new Display();
     <?php if ($this->notes['no_style'] == "customizer") : ?>
     <style scoped>
       #sfcf_contact_popup #sfcf_form_wrapper {
-        background-color: rgba(var(--primary));
+        background-color: var(--primary);
       }
 
       #sfcf_contact_popup .sfcf-form__heading h2 {
-        color: rgba(var(--light));
+        color: var(--light);
       }
 
       #sfcf_contact_popup form input:not([type=checkbox]):not([type=submit]), #sfcf_contact_popup form textarea {
-        box-shadow: inset 0 0 0 1px rgba(var(--border));
-        color: rgba(var(--text-light));
+        box-shadow: inset 0 0 0 1px var(--border);
+        color: var(--text-light);
       }
 
       #sfcf_contact_popup form input:not([type=checkbox]):not([type=submit]):hover, #sfcf_contact_popup form textarea:hover {
-        box-shadow: inset 0 0 0 2px rgba(var(--border));
-        color: rgba(var(--text-default));
+        box-shadow: inset 0 0 0 2px var(--border);
+        color: var(--text-default);
       }
 
       #sfcf_contact_popup form input:not([type=checkbox]):not([type=submit]):focus, #sfcf_contact_popup form textarea:focus {
-        box-shadow: inset 0 0 0 2px rgba(var(--border));
-        color: rgba(var(--text-default));
+        box-shadow: inset 0 0 0 2px var(--border);
+        color: var(--text-default);
       }
 
       #sfcf_contact_popup form input[type=checkbox] {
-        border: 1px solid rgba(var(--border));
+        border: 1px solid var(--border);
       }
 
       #sfcf_contact_popup form input[type=checkbox]:checked  {
-        background-color: rgba(var(--border));
+        background-color: var(--border);
       }
 
       #sfcf_contact_popup span {
-        color: rgba(var(--light));
+        color: var(--light);
       }
 
       #sfcf_contact_popup .sfcf__form-close a {
-        background: rgba(var(--action-buttons));
+        background: var(--action-buttons);
       }
 
       #sfcf_contact_popup .sfcf__form-close .sfcf-close-logo {
         width: 100%;
         height: 100%;
-        background-color: rgba(var(--light));
+        background-color: var(--light);
         -webkit-mask: url("<?php echo esc_html(SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/close.svg'); ?>") no-repeat center;
         mask: url("<?php echo esc_html(SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/close.svg'); ?>") no-repeat center;
       }
 
       #sfcf_contact_popup form input[type=submit] {
-        background: rgba(var(--action-buttons));
-        color: rgba(var(--light));
+        background: var(--action-buttons);
+        color: var(--light);
       }
 
       #sfcf_contact_popup .sfcf__toggler {
-        background-color: rgba(var(--primary));
+        background-color: var(--primary);
       }
 
       #sfcf_contact_popup .sfcf__toggler .toggler__label {
-        color: rgba(var(--light));
+        color: var(--light);
       }
 
       #sfcf_contact_popup .sfcf__button {
-        background: rgba(var(--action-buttons));
-        color: rgba(var(--light));
+        background: var(--action-buttons);
+        color: var(--light);
       }
     </style>
     <?php endif; ?>
