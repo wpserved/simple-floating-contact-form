@@ -75,6 +75,9 @@ class General
     add_option('sfcf-color-toggle', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggle');
 
+    add_option('sfcf-color-toggler-text', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggler-text');
+
     add_option('sfcf-color-bg', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-bg');
 
@@ -90,11 +93,17 @@ class General
     add_option('sfcf-color-input-border', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-border');
 
+    add_option('sfcf-color-terms-link', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-terms-link');
+
     add_option('sfcf-color-btn', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn');
 
     add_option('sfcf-color-btn-text', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-text');
+
+    add_option('sfcf-color-btn-border-hover', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-border-hover');
 
     add_option('sfcf-display-custom', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-display-custom',);
