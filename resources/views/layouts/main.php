@@ -202,12 +202,14 @@ $displayOptions = new Display();
         <div class="sfcf-form__success sfcf-success">
           <h2><?php echo esc_html($this->notes['success_title']); ?></h2>
           <div class="sfcf-success__icon">
-            <img src="<?php echo esc_url(SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/success.svg'); ?>" alt="success" />
+            <img src="<?php echo esc_url($this->notes['success_icon']); ?>" alt="success" />
           </div>
           <p><?php echo wp_kses($this->notes['success_note'], ['b' => [], 'br' => []]); ?></p>
-          <div class="sfcf-success__btn">
-            <a href="<?php echo esc_url($this->notes['success_url']); ?>" class="sfcf__button"><?php echo esc_html($this->notes['success_btn']); ?></a>
-          </div>
+          <?php if (! empty($this->notes['success_url']) && ! empty($this->notes['success_btn'])): ?>
+            <div class="sfcf-success__btn">
+              <a href="<?php echo esc_url($this->notes['success_url']); ?>" class="sfcf__button"><?php echo esc_html($this->notes['success_btn']); ?></a>
+            </div>
+          <?php endif; ?>
         </div>
         <div class="sfcf__form-close">
           <a href="" data-js="sfcf-close">
