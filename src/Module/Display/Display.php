@@ -53,7 +53,7 @@ class Display
    */
   public function defaultData()
   {
-    $this->notes['toggler_btn'] = get_option('sfcf-form-toggler') ?: __('Need a help?', 'simple-floating-contact-form');
+    $this->notes['toggler_btn'] = get_option('sfcf-form-toggler') ?: __('Need help?', 'simple-floating-contact-form');
     $this->notes['form_title'] = get_option('sfcf-form-title') ?: __('Contact us to get a quick help.', 'simple-floating-contact-form');
     $this->notes['input_1'] = get_option('sfcf-form-name-input') ?: __('Name & Surname / Company name', 'simple-floating-contact-form');
     $this->notes['input_2'] = get_option('sfcf-form-email-input') ?: __('E-mail adress', 'simple-floating-contact-form');
