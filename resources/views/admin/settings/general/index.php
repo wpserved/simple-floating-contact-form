@@ -539,6 +539,20 @@ $display = new Display();
                 </fieldset>
               </td>
             </tr>
+
+            <tr valign="top">
+              <th scope="row">
+                <label for="sfcf-color-btn-border-hover">
+                  <?php echo esc_html(__('Success icon background color', 'simple-floating-contact-form')); ?>:
+                </label>
+              </th>
+
+              <td>
+                <fieldset>
+                  <input type="text" class="regular-text sfcf-color" id="sfcf-color-success-icon" name="sfcf-color-success-icon" value="<?php echo esc_attr($display->printData()['color_success_icon']); ?>" data-default-color="#3A1A86"/>
+                </fieldset>
+              </td>
+            </tr>
           </table>
         <?php endif; ?>
       </div>

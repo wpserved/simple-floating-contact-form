@@ -216,7 +216,21 @@
         &__icon {
           height: auto;
           max-width: 324px;
+          max-height: 240px;
           margin: 0 auto 29px;
+
+          svg {
+            width: 324px;
+            height: 240px;
+
+            .check {
+              stroke: $c_secondary;
+            }
+
+            .oval {
+              fill: $c_success_icon;
+            }
+          }
         }
       }
     }
