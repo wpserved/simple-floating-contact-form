@@ -1,4 +1,5 @@
-.sfcf-form {
+.sfcf-form,
+.sfcf-success {
   &-icon {
     &__wrapper {
       display: flex;
@@ -15,7 +16,7 @@
 
     &__img {
       max-width: 40px;
-      max-height: 40px;  
+      max-height: 40px;
     }
   }
 }
