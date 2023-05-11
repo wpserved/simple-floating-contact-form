@@ -4,7 +4,7 @@ Donate link: https://wpserved.com/
 Tags: contact form, floating form, popup contact form, floating contact form, contact button, simple contact form
 Requires at least: 5.4
 Tested up to: 6.1
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 Requires PHP: 7.2
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -15,10 +15,10 @@ Simple Floating Contact Form is a simple tool to build website visitor engagemen
 
 = This lightweight plugin was designed to make your work easier. It’s simple. It’s quick. =
 
-[Simple Floating Contact Form](https://simple-contact.com/?utm_source=simple_contact_plugin&utm_medium=wp_repo_desc&utm_campaign=wpserved_plugins&utm_id=wpserved_plugins) is a super easy to use, secure, plug and play floating contact form for your WordPress website. 
+[Simple Floating Contact Form](https://simple-contact.com/?utm_source=simple_contact_plugin&utm_medium=wp_repo_desc&utm_campaign=wpserved_plugins&utm_id=wpserved_plugins) is a super easy to use, secure, plug and play floating contact form for your WordPress website.
 
 - Crafted by experienced UX designers so you get expected business results.
-- No configuration required to start collecting messages from your website visitors. 
+- No configuration required to start collecting messages from your website visitors.
 - Flexible and easy to understand settings - for every single detail of your form.
 - Styling options include flexible color settings, custom icon upload and more.
 - You have full control over where the form is displayed.
@@ -27,7 +27,7 @@ Simple Floating Contact Form is a simple tool to build website visitor engagemen
 
 - After installation you need to Activate the plugin.
 - Right after activation your plugin is ready to use and collects messages from your website. It’s that simple!
-- You can navigate to the Settings > Simple Floating Contact Form section in your WordPress Admin area, and customize or translate every single text information or text label of the form. 
+- You can navigate to the Settings > Simple Floating Contact Form section in your WordPress Admin area, and customize or translate every single text information or text label of the form.
 - In the Display tab within the plugin settings page you can decide where you want to display your form.
 
 = Core Features =
