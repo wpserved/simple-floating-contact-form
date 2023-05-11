@@ -7,13 +7,13 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 jQuery(function($) {
   jQuery(document).ready(function($){
     // Define a variable uploadIcon
-    var uploadIcon;
-    var uploadSuccessIcon;
+    let uploadIcon;
+    let uploadSuccessIcon;
 
     $('#sfcf-form-icon-btn').click(function(e) {
       e.preventDefault();
       // If the upload object has already been created, reopen the dialog
-        if (uploadIcon) {
+      if (uploadIcon) {
         uploadIcon.open();
         return;
       }
