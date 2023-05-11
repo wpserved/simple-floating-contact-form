@@ -5,7 +5,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 }
 
 jQuery(function($) {
-  jQuery(document).ready(function($){
+  jQuery(document).ready(function($) {
     // Define a variable uploadIcon
     let uploadIcon;
     let uploadSuccessIcon;
@@ -26,7 +26,7 @@ jQuery(function($) {
 
       // When a file is selected, grab the URL and set it as the text field's value
       uploadIcon.on('select', function() {
-        var attachment = uploadIcon.state().get('selection').first().toJSON();
+        const attachment = uploadIcon.state().get('selection').first().toJSON();
         $('#sfcf-form-icon').val(attachment.url);
         $('#sfcf-form-icon-img').attr('src', attachment.url);
       });
@@ -44,7 +44,7 @@ jQuery(function($) {
       e.preventDefault();
       // If the upload object has already been created, reopen the dialog
         if (uploadSuccessIcon) {
-        uploadSuccessIcon.open();
+          uploadSuccessIcon.open();
         return;
       }
       // Extend the wp.media object
@@ -56,7 +56,7 @@ jQuery(function($) {
 
       // When a file is selected, grab the URL and set it as the text field's value
       uploadSuccessIcon.on('select', function() {
-        var attachment = uploadSuccessIcon.state().get('selection').first().toJSON();
+        const attachment = uploadSuccessIcon.state().get('selection').first().toJSON();
         $('#sfcf-success-icon').val(attachment.url);
         $('#sfcf-success-icon-img').attr('src', attachment.url);
       });
@@ -71,6 +71,5 @@ jQuery(function($) {
     });
 
     $('.sfcf-color').wpColorPicker();
-
   });
 });
