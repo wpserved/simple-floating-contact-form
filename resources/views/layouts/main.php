@@ -213,7 +213,6 @@ $displayOptions = new Display();
             <?php if (! empty($this->notes['success_icon'])): ?>
               <img src="<?php echo esc_url($this->notes['success_icon']); ?>" alt="success" />
             <?php else :?>
-              <?xml version="1.0" encoding="UTF-8"?>
               <svg width="324px" height="240px" viewBox="0 0 324 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <polygon id="path-1" points="0 0.0002 85.0109788 0.0002 85.0109788 85.0002 0 85.0002"></polygon>
