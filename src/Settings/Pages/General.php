@@ -69,6 +69,9 @@ class General
     add_option('sfcf-success-link', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-success-link');
 
+    add_option('sfcf-success-icon', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-success-icon');
+
     add_option('sfcf-no-styling-option', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-no-styling-option');
 
@@ -104,6 +107,9 @@ class General
 
     add_option('sfcf-color-btn-border-hover', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-border-hover');
+
+    add_option('sfcf-color-success-icon', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-success-icon');
 
     add_option('sfcf-display-custom', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-display-custom',);

@@ -14,7 +14,7 @@ $display = new Display();
         <h3>
           <?php _e('ERROR', 'simple-floating-contact-form'); ?>
         </h3>
-        
+
         <p>
           <strong>
             <?php _e('Astratic Theme not detected - choose style option', 'simple-floating-contact-form'); ?>
@@ -59,7 +59,7 @@ $display = new Display();
         <h2 class="title">
           <?php echo esc_html(__('Email settings', 'simple-floating-contact-form')); ?>
         </h2>
-        
+
         <p></p>
 
         <table class="form-table" role="presentation">
@@ -69,11 +69,11 @@ $display = new Display();
                 <?php echo esc_html(__('Email recipent(s)', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-email-recipent" name="sfcf-email-recipent" value="<?php echo esc_attr(get_option('sfcf-email-recipent')); ?>" />
-                
+
                 <p class="description">
                   <?php echo esc_html(__('Enter the email address (or several separated by a comma). If you leave this field empty, emails will be send to your website\'s administrator email address.', 'simple-floating-contact-form')); ?>
                 </p>
@@ -109,7 +109,7 @@ $display = new Display();
                 <?php echo esc_html(__('Form title', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-form-title" name="sfcf-form-title" value="<?php echo esc_attr(get_option('sfcf-form-title')); ?>" />
@@ -123,7 +123,7 @@ $display = new Display();
                 <?php echo esc_html(__('Name and Surname label', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-form-name-input" name="sfcf-form-name-input" value="<?php echo esc_attr(get_option('sfcf-form-name-input')); ?>" />
@@ -151,7 +151,7 @@ $display = new Display();
                 <?php echo esc_html(__('Email subject label', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-form-email-subject" name="sfcf-form-email-subject" value="<?php echo esc_attr(get_option('sfcf-form-email-subject')); ?>" />
@@ -189,7 +189,7 @@ $display = new Display();
                 <small>
                   <?php echo __('Leave empty to hide this field in the form.', 'simple-floating-contact-form'); ?>
                 </small>
-                
+
                 <small>
                   <?php echo __('To link something, you can use the shortcode:', 'simple-floating-contact-form'); ?> [sfcf_link url=# title=FooBoo target_blank=1]
                 </small>
@@ -217,17 +217,17 @@ $display = new Display();
                 <?php echo esc_html(__('Form icon', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset class="sfcf-form-icon__wrapper">
                 <input type="hidden" name="sfcf-form-icon" id="sfcf-form-icon" value="<?php echo esc_attr(get_option('sfcf-form-icon')); ?>"/>
-                
+
                 <input type="button" class="button" id="sfcf-form-icon-btn" value="Upload Image" />
-                
+
                 <?php if (! empty(get_option('sfcf-form-icon'))) : ?>
                   <input type="button" class="button --red" id="sfcf-form-icon-clear" value="Clear" />
                 <?php endif ?>
-                
+
                 <img class="sfcf-form-icon__img" id="sfcf-form-icon-img" src="<?php echo esc_url(get_option('sfcf-form-icon')); ?>" alt="">
               </fieldset>
 
@@ -267,7 +267,7 @@ $display = new Display();
                 <?php echo esc_html(__('Success page message', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-success-note" name="sfcf-success-note" value="<?php echo esc_attr(get_option('sfcf-success-note')); ?>" />
@@ -281,7 +281,7 @@ $display = new Display();
                 <?php echo esc_html(__('Success page button label', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-success-button" name="sfcf-success-button" value="<?php echo esc_attr(get_option('sfcf-success-button')); ?>" />
@@ -295,11 +295,39 @@ $display = new Display();
                 <?php echo esc_html(__('Button\'s link', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="text" class="regular-text" id="sfcf-success-link" name="sfcf-success-link" value="<?php echo esc_attr(get_option('sfcf-success-link')); ?>" />
               </fieldset>
+            </td>
+          </tr>
+
+          <tr valign="top">
+            <th scope="row">
+              <label for="sfcf-success-icon">
+                <?php echo esc_html(__('Success icon', 'simple-floating-contact-form')); ?>:
+              </label>
+            </th>
+
+            <td>
+              <fieldset class="sfcf-success-icon__wrapper">
+                <input type="hidden" name="sfcf-success-icon" id="sfcf-success-icon" value="<?php echo esc_attr(get_option('sfcf-success-icon')); ?>"/>
+
+                <input type="button" class="button" id="sfcf-success-icon-btn" value="Upload Image" />
+
+                <?php if (! empty(get_option('sfcf-success-icon'))) : ?>
+                  <input type="button" class="button --red" id="sfcf-success-icon-clear" value="Clear" />
+                <?php endif ?>
+
+                <img class="sfcf-success-icon__img" id="sfcf-success-icon-img" src="<?php echo esc_url(get_option('sfcf-success-icon')); ?>" alt="">
+              </fieldset>
+
+              <p class="description">
+                <small>
+                  <?php echo esc_html(__('Choose the icon which will occur on the success message (324px on 240px size, .png or .svg preferred)', 'simple-floating-contact-form')); ?>
+                </small>
+              </p>
             </td>
           </tr>
         </table>
@@ -318,28 +346,28 @@ $display = new Display();
                 <?php echo esc_html(__('Choose styling option', 'simple-floating-contact-form')); ?>:
               </label>
             </th>
-            
+
             <td>
               <fieldset>
                 <input type="radio" class="regular-text" id="sfcf-no-styling-option-false" name="sfcf-no-styling-option" value="false" <?php if (get_option('sfcf-no-styling-option') == "false" || get_option('sfcf-no-styling-option') == "" ) { echo "checked"; }; ?>>
-                
+
                 <label for="sfcf-no-styling-option-false">
                   <?php _e('Default stylesheet (with in-plugin styling option)', 'simple-floating-contact-form'); ?>
                 </label>
-                
+
                 <br>
-                
+
                 <input type="radio" class="regular-text" id="sfcf-no-styling-option-true" name="sfcf-no-styling-option" value="true" <?php if (get_option('sfcf-no-styling-option') == "true") { echo "checked"; }; ?>>
-                
+
                 <label for="sfcf-no-styling-option-true">
                   <?php _e('Custom stylesheet (prepared by developer, without in-plugin styling option)', 'simple-floating-contact-form'); ?>
                 </label>
-                
+
                 <br>
-                
+
                 <?php if (get_option('stylesheet') == 'astratic-child' || get_option('stylesheet') == 'astratic'): ?>
                   <input type="radio" class="regular-text" id="sfcf-no-styling-option-customizer" name="sfcf-no-styling-option" value="customizer" <?php if (get_option('sfcf-no-styling-option') == "customizer") { echo "checked"; }; ?>>
-                  
+
                   <label for="sfcf-no-styling-option-customizer">
                     <strong>
                       <?php _e('Match colors with the Astratic Theme', 'simple-floating-contact-form'); ?>
@@ -364,7 +392,7 @@ $display = new Display();
                   <?php echo esc_html(__('Toggle color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-toggle" name="sfcf-color-toggle" value="<?php echo esc_attr($display->printData()['color_toggle']); ?>" data-default-color="#6835CC"/>
@@ -378,7 +406,7 @@ $display = new Display();
                   <?php echo esc_html(__('Toggler text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-toggler-text" name="sfcf-color-toggler-text" value="<?php echo esc_attr($display->printData()['color_toggler_text']); ?>" data-default-color="#FFF"/>
@@ -392,7 +420,7 @@ $display = new Display();
                   <?php echo esc_html(__('Background color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-bg" name="sfcf-color-bg" value="<?php echo esc_attr($display->printData()['color_bg']); ?>" data-default-color="#6835CC"/>
@@ -406,7 +434,7 @@ $display = new Display();
                   <?php echo esc_html(__('Text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-text" name="sfcf-color-text" value="<?php echo esc_attr($display->printData()['color_text']); ?>" data-default-color="#FFF"/>
@@ -420,7 +448,7 @@ $display = new Display();
                   <?php echo esc_html(__('Input text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-text" name="sfcf-color-input-text" value="<?php echo esc_attr($display->printData()['color_input_text']); ?>" data-default-color="#222"/>
@@ -434,7 +462,7 @@ $display = new Display();
                   <?php echo esc_html(__('Input text color (on focus)', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-text-focus" name="sfcf-color-input-text-focus" value="<?php echo esc_attr($display->printData()['color_input_text_focus']); ?>" data-default-color="#6835CC"/>
@@ -448,7 +476,7 @@ $display = new Display();
                   <?php echo esc_html(__('Input border color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-border" name="sfcf-color-input-border" value="<?php echo esc_attr($display->printData()['color_input_border']); ?>" data-default-color="#03E2AB"/>
@@ -462,7 +490,7 @@ $display = new Display();
                   <?php echo esc_html(__('Terms link color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-terms-link" name="sfcf-color-terms-link" value="<?php echo esc_attr($display->printData()['color_terms_link']); ?>" data-default-color="#03E2AB"/>
@@ -476,7 +504,7 @@ $display = new Display();
                   <?php echo esc_html(__('Buttons color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-btn" name="sfcf-color-btn" value="<?php echo esc_attr($display->printData()['color_btn']); ?>" data-default-color="#03E2AB"/>
@@ -490,7 +518,7 @@ $display = new Display();
                   <?php echo esc_html(__('Buttons text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-btn-text" name="sfcf-color-btn-text" value="<?php echo esc_attr($display->printData()['color_btn_text']); ?>" data-default-color="#FFF"/>
@@ -504,10 +532,24 @@ $display = new Display();
                   <?php echo esc_html(__('Buttons border color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-btn-border-hover" name="sfcf-color-btn-border-hover" value="<?php echo esc_attr($display->printData()['color_btn_border_hover']); ?>" data-default-color="#03E2AB"/>
+                </fieldset>
+              </td>
+            </tr>
+
+            <tr valign="top">
+              <th scope="row">
+                <label for="sfcf-color-btn-border-hover">
+                  <?php echo esc_html(__('Success icon background color', 'simple-floating-contact-form')); ?>:
+                </label>
+              </th>
+
+              <td>
+                <fieldset>
+                  <input type="text" class="regular-text sfcf-color" id="sfcf-color-success-icon" name="sfcf-color-success-icon" value="<?php echo esc_attr($display->printData()['color_success_icon']); ?>" data-default-color="#3A1A86"/>
                 </fieldset>
               </td>
             </tr>
@@ -529,7 +571,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on custom home/front pages', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <?php if (get_option('page_on_front') != 0) : ?>
@@ -584,7 +626,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on home page', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <div>
@@ -615,7 +657,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on pages', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <?php foreach (get_pages() as $page): ?>
@@ -654,7 +696,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on post types (single posts)', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <?php foreach ($posts_types as $post_type): ?>
@@ -686,7 +728,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on post types (archive pages)', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <?php foreach ($posts_types as $post_type):
@@ -730,7 +772,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on categories (category page)', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <?php foreach ($category_types as $category): ?>
@@ -772,7 +814,7 @@ $display = new Display();
                   <?php echo esc_html(__('Display on tags (tag page)', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
-              
+
               <td>
                 <fieldset>
                   <?php foreach ($tags_types as $tag): ?>
