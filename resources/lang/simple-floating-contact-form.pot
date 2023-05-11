@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-14 15:14+0100\n"
+"POT-Creation-Date: 2023-05-10 15:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,177 +17,248 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: resources/views/admin/settings/general/index.php:19
+#: resources/views/admin/settings/general/index.php:15
+msgid "ERROR"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:20
+msgid "Astratic Theme not detected - choose style option"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:28
 #: src/Settings/Pages/General.php:17
 msgid "Simple Floating Contact Form"
 msgstr ""
 
 #: resources/views/admin/settings/general/index.php:42
-msgid "Email settings"
+msgid "General"
 msgstr ""
 
 #: resources/views/admin/settings/general/index.php:47
+msgid "Style"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:52
+msgid "Display"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:60
+msgid "Email settings"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:69
 msgid "Email recipent(s)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:51
+#: resources/views/admin/settings/general/index.php:78
 msgid ""
 "Enter the email address (or several separated by a comma). If you leave this "
 "field empty, emails will be send to your website's administrator email "
 "address."
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:57
+#: resources/views/admin/settings/general/index.php:86
 msgid "Form settings"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:62
+#: resources/views/admin/settings/general/index.php:95
 msgid "Toggle button text (on hover)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:71
+#: resources/views/admin/settings/general/index.php:109
 msgid "Form title"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:80
+#: resources/views/admin/settings/general/index.php:123
 msgid "Name and Surname label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:89
+#: resources/views/admin/settings/general/index.php:137
 msgid "Email address label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:98
+#: resources/views/admin/settings/general/index.php:151
 msgid "Email subject label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:107
+#: resources/views/admin/settings/general/index.php:165
 msgid "Message label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:116
+#: resources/views/admin/settings/general/index.php:179
 msgid "Checkbox label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:119
+#: resources/views/admin/settings/general/index.php:185
 msgid "I have read and accept the Terms of Service & Privacy Policy."
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:122
+#: resources/views/admin/settings/general/index.php:190
 msgid "Leave empty to hide this field in the form."
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:123
+#: resources/views/admin/settings/general/index.php:194
 msgid "To link something, you can use the shortcode:"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:129
+#: resources/views/admin/settings/general/index.php:203
 msgid "Submit label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:138
+#: resources/views/admin/settings/general/index.php:217
 msgid "Form icon"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:148
+#: resources/views/admin/settings/general/index.php:236
 msgid ""
 "Choose the icon which will occur in the pop up activation button (40px on "
 "40px size, .png or .svg preferred)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:153
+#: resources/views/admin/settings/general/index.php:244
 msgid "Success page settings"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:158
+#: resources/views/admin/settings/general/index.php:252
 msgid "Success page title"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:168
+#: resources/views/admin/settings/general/index.php:267
 msgid "Success page message"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:177
+#: resources/views/admin/settings/general/index.php:281
 msgid "Success page button label"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:186
+#: resources/views/admin/settings/general/index.php:295
 msgid "Button's link"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:193
+#: resources/views/admin/settings/general/index.php:309
+msgid "Success icon"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:328
+msgid ""
+"Choose the icon which will occur on the success message (324px on 240px "
+"size, .png or .svg preferred)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:338
 msgid "Styling options (optional)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:198
+#: resources/views/admin/settings/general/index.php:346
 msgid "Choose styling option"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:215
+#: resources/views/admin/settings/general/index.php:355
+msgid "Default stylesheet (with in-plugin styling option)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:363
+msgid ""
+"Custom stylesheet (prepared by developer, without in-plugin styling option)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:373
+msgid "Match colors with the Astratic Theme"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:384
 msgid "Color Settings"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:220
+#: resources/views/admin/settings/general/index.php:392
 msgid "Toggle color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:229
+#: resources/views/admin/settings/general/index.php:406
+msgid "Toggler text color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:420
 msgid "Background color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:238
+#: resources/views/admin/settings/general/index.php:434
 msgid "Text color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:247
+#: resources/views/admin/settings/general/index.php:448
 msgid "Input text color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:256
+#: resources/views/admin/settings/general/index.php:462
 msgid "Input text color (on focus)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:265
+#: resources/views/admin/settings/general/index.php:476
 msgid "Input border color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:274
+#: resources/views/admin/settings/general/index.php:490
+msgid "Terms link color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:504
 msgid "Buttons color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:283
+#: resources/views/admin/settings/general/index.php:518
 msgid "Buttons text color"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:295
+#: resources/views/admin/settings/general/index.php:532
+msgid "Buttons border color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:546
+msgid "Success icon background color"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:562
 msgid "Display Settings"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:301
+#: resources/views/admin/settings/general/index.php:571
 msgid "Display on custom home/front pages"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:353
+#: resources/views/admin/settings/general/index.php:594
+msgid "(front page)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:615
+msgid "(page for posts)"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:626
 msgid "Display on home page"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:381
+#: resources/views/admin/settings/general/index.php:645
+msgid "Default home page"
+msgstr ""
+
+#: resources/views/admin/settings/general/index.php:657
 msgid "Display on pages"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:417
+#: resources/views/admin/settings/general/index.php:696
 msgid "Display on post types (single posts)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:445
+#: resources/views/admin/settings/general/index.php:728
 msgid "Display on post types (archive pages)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:485
+#: resources/views/admin/settings/general/index.php:772
 msgid "Display on categories (category page)"
 msgstr ""
 
-#: resources/views/admin/settings/general/index.php:523
+#: resources/views/admin/settings/general/index.php:814
 msgid "Display on tags (tag page)"
 msgstr ""
 
@@ -215,42 +286,38 @@ msgstr ""
 msgid "Ups! Something weng wrong!"
 msgstr ""
 
-#: src/Module/Display/Display.php:55
-msgid "Need a help?"
-msgstr ""
-
 #: src/Module/Display/Display.php:56
-msgid "Contact us to get a quick help."
+msgid "Need help?"
 msgstr ""
 
 #: src/Module/Display/Display.php:57
-msgid "Name & Surname / Company name"
+msgid "Contact us to get a quick help."
 msgstr ""
 
 #: src/Module/Display/Display.php:58
-msgid "E-mail adress"
+msgid "Name & Surname / Company name"
 msgstr ""
 
 #: src/Module/Display/Display.php:59
-msgid "Message Subject"
+msgid "E-mail adress"
 msgstr ""
 
 #: src/Module/Display/Display.php:60
+msgid "Message Subject"
+msgstr ""
+
+#: src/Module/Display/Display.php:61
 msgid "Your Message"
 msgstr ""
 
-#: src/Module/Display/Display.php:62
+#: src/Module/Display/Display.php:63
 msgid "Send Message"
 msgstr ""
 
-#: src/Module/Display/Display.php:64
+#: src/Module/Display/Display.php:65
 msgid "Your message was sent."
 msgstr ""
 
-#: src/Module/Display/Display.php:65
-msgid "We will contact you soon!<br><b>In the meantime check out:</b>"
-msgstr ""
-
 #: src/Module/Display/Display.php:66
-msgid "Check other page"
+msgid "We will contact you soon!<br><b>In the meantime check out:</b>"
 msgstr ""

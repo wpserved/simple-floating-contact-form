@@ -27,6 +27,7 @@ class Display
   public function printData()
   {
     $this->defaultData();
+
     return $this->notes;
   }
 
@@ -52,35 +53,40 @@ class Display
    */
   public function defaultData()
   {
-    $this->notes['toggler_btn']   = get_option('sfcf-form-toggler') ?: __('Need a help?', 'simple-floating-contact-form');
-    $this->notes['form_title']    = get_option('sfcf-form-title') ?: __('Contact us to get a quick help.', 'simple-floating-contact-form');
-    $this->notes['input_1']       = get_option('sfcf-form-name-input') ?: __('Name & Surname / Company name', 'simple-floating-contact-form');
-    $this->notes['input_2']       = get_option('sfcf-form-email-input') ?: __('E-mail adress', 'simple-floating-contact-form');
-    $this->notes['input_3']       = get_option('sfcf-form-email-subject') ?: __('Message Subject', 'simple-floating-contact-form');
-    $this->notes['input_4']       = get_option('sfcf-form-email-message') ?: __('Your Message', 'simple-floating-contact-form');
-    $this->notes['checkbox']      = get_option('sfcf-form-checkbox') ? $this->shortcode->doShortcodesInContent(get_option('sfcf-form-checkbox', '')) : '';
-    $this->notes['submit']        = get_option('sfcf-form-submit') ?: __('Send Message', 'simple-floating-contact-form');
-    $this->notes['icon']          = get_option('sfcf-form-icon') ?: SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/icon-support.svg';
+    $this->notes['toggler_btn'] = get_option('sfcf-form-toggler') ?: __('Need help?', 'simple-floating-contact-form');
+    $this->notes['form_title'] = get_option('sfcf-form-title') ?: __('Contact us to get a quick help.', 'simple-floating-contact-form');
+    $this->notes['input_1'] = get_option('sfcf-form-name-input') ?: __('Name & Surname / Company name', 'simple-floating-contact-form');
+    $this->notes['input_2'] = get_option('sfcf-form-email-input') ?: __('E-mail adress', 'simple-floating-contact-form');
+    $this->notes['input_3'] = get_option('sfcf-form-email-subject') ?: __('Message Subject', 'simple-floating-contact-form');
+    $this->notes['input_4'] = get_option('sfcf-form-email-message') ?: __('Your Message', 'simple-floating-contact-form');
+    $this->notes['checkbox'] = get_option('sfcf-form-checkbox') ? $this->shortcode->doShortcodesInContent(get_option('sfcf-form-checkbox', '')) : '';
+    $this->notes['submit'] = get_option('sfcf-form-submit') ?: __('Send Message', 'simple-floating-contact-form');
+    $this->notes['icon'] = get_option('sfcf-form-icon') ?: SIMPLE_FLOATING_CONTACT_FORM_ASSETS_URI . '/images/icon-support.svg';
     $this->notes['success_title'] = get_option('sfcf-success-title') ?: __('Your message was sent.', 'simple-floating-contact-form');
-    $this->notes['success_note']  = get_option('sfcf-success-note') ?: __('We will contact you soon!<br><b>In the meantime check out:</b>', 'simple-floating-contact-form');
-    $this->notes['success_btn']   = get_option('sfcf-success-button') ?: __('Check other page', 'simple-floating-contact-form');
-    $this->notes['success_url']   = get_option('sfcf-success-link');
+    $this->notes['success_note'] = get_option('sfcf-success-note') ?: __('We will contact you soon!<br><b>In the meantime check out:</b>', 'simple-floating-contact-form');
+    $this->notes['success_btn'] = get_option('sfcf-success-button');
+    $this->notes['success_url'] = get_option('sfcf-success-link');
+    $this->notes['success_icon'] = get_option('sfcf-success-icon');
 
-    $this->notes['no_style']                 = get_option('sfcf-no-styling-option') ?: 'false';
-    $this->notes['color_toggle']             = get_option('sfcf-color-toggle') ?: '#6835CC';
-    $this->notes['color_bg']                 = get_option('sfcf-color-bg') ?: '#6835CC';
-    $this->notes['color_text']               = get_option('sfcf-color-text') ?: '#FFF';
-    $this->notes['color_input_text']         = get_option('sfcf-color-input-text') ?: '#222';
-    $this->notes['color_input_text_focus']   = get_option('sfcf-color-input-text-focus') ?: '#6835CC';
-    $this->notes['color_input_border']       = get_option('sfcf-color-input-border') ?: '#03E2AB';
-    $this->notes['color_btn']                = get_option('sfcf-color-btn') ?: '#03E2AB';
-    $this->notes['color_btn_text']           = get_option('sfcf-color-btn-text') ?: '#FFF';
-  
-    $this->notes['display_pages']           = get_option('sfcf-display-pages') ?: '';
-    $this->notes['display_posts']           = get_option('sfcf-display-posts') ?: '';
-    $this->notes['display_posts-archive']   = get_option('sfcf-display-posts-archive') ?: '';
-    $this->notes['display_categories']      = get_option('sfcf-display-categories') ?: '';
-    $this->notes['display_tags']            = get_option('sfcf-display-tags') ?: '';
+    $this->notes['no_style'] = get_option('sfcf-no-styling-option') ?: 'false';
+    $this->notes['color_toggle'] = get_option('sfcf-color-toggle') ?: '#6835CC';
+    $this->notes['color_toggler_text'] = get_option('sfcf-color-toggler-text') ?: '#FFF';
+    $this->notes['color_bg'] = get_option('sfcf-color-bg') ?: '#6835CC';
+    $this->notes['color_text'] = get_option('sfcf-color-text') ?: '#FFF';
+    $this->notes['color_input_text'] = get_option('sfcf-color-input-text') ?: '#222';
+    $this->notes['color_input_text_focus'] = get_option('sfcf-color-input-text-focus') ?: '#6835CC';
+    $this->notes['color_input_border'] = get_option('sfcf-color-input-border') ?: '#03E2AB';
+    $this->notes['color_terms_link'] = get_option('sfcf-color-terms-link') ?: '#03E2AB';
+    $this->notes['color_btn'] = get_option('sfcf-color-btn') ?: '#03E2AB';
+    $this->notes['color_btn_text'] = get_option('sfcf-color-btn-text') ?: '#FFF';
+    $this->notes['color_btn_border_hover'] = get_option('sfcf-color-btn-border-hover') ?: '#03E2AB';
+    $this->notes['color_success_icon'] = get_option('sfcf-color-success-icon') ?: '#3A1A86';
+
+    $this->notes['display_pages'] = get_option('sfcf-display-pages') ?: '';
+    $this->notes['display_posts'] = get_option('sfcf-display-posts') ?: '';
+    $this->notes['display_posts-archive'] = get_option('sfcf-display-posts-archive') ?: '';
+    $this->notes['display_categories'] = get_option('sfcf-display-categories') ?: '';
+    $this->notes['display_tags'] = get_option('sfcf-display-tags') ?: '';
 
     $this->notes['display'] = array_merge(
       get_option('sfcf-display-custom') ?: array(),
@@ -149,7 +155,7 @@ class Display
       if (array_key_exists('id-tag-'.get_post(get_queried_object_id())->ID, $this->printData()['display'])) {
         return true;
       }
-      
+
       return false;
     }
 
