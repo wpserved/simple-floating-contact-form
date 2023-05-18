@@ -389,7 +389,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-toggle">
-                  <?php echo esc_html(__('Toggle color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Toggle background color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -403,7 +403,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-toggler-text">
-                  <?php echo esc_html(__('Toggler text color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Toggle form text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -417,7 +417,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-bg">
-                  <?php echo esc_html(__('Background color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Form background color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -431,7 +431,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-text">
-                  <?php echo esc_html(__('Text color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Form text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -445,7 +445,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-input-text">
-                  <?php echo esc_html(__('Input text color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Form input field text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -459,7 +459,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-input-text-focus">
-                  <?php echo esc_html(__('Input text color (on focus)', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Form input field text color (focus)', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -473,7 +473,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-input-border">
-                  <?php echo esc_html(__('Input border color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Form field border color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -501,7 +501,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-btn">
-                  <?php echo esc_html(__('Buttons color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Buttons background color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
