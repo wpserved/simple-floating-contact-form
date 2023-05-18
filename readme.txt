@@ -51,6 +51,7 @@ You can find the plugin’s source code on our GitHub repo page. Feel free to pl
 == Changelog ==
 = 1.2.7 =
 Update the "Tested up to" value
+Update fields label
 
 = 1.2.6 =
 Add fields to customize success view
