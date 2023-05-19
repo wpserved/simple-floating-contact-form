@@ -57,6 +57,14 @@ $display = new Display();
 
       <div class="sfcf-tab__panel-1">
         <h2 class="title">
+          <?php echo esc_html(__('General Settings', 'simple-floating-contact-form')); ?>
+        </h2>
+
+        <p class="description">
+          <?php echo esc_html(__('Fill out the form fields below if you need to overwrite default texts or activate some of the non-default features.', 'simple-floating-contact-form')); ?>
+        </p>
+
+        <h2 class="title">
           <?php echo esc_html(__('Email settings', 'simple-floating-contact-form')); ?>
         </h2>
 
@@ -561,7 +569,10 @@ $display = new Display();
         <h2 class="title">
           <?php echo esc_html(__('Display Settings', 'simple-floating-contact-form')); ?>
         </h2>
-        <p></p>
+
+        <p class="description">
+          <?php echo esc_html(__('Simple Floating Contact Form toggle button is visible on all pages of your website by default. You can change that by selecting one or all of the options below.', 'simple-floating-contact-form')); ?>
+        </p>
 
         <table class="form-table" role="presentation">
           <?php if (get_option('page_on_front') != 0 || get_option('page_for_posts') != 0 ) : ?>
