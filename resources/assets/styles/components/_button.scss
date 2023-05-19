@@ -17,8 +17,8 @@
 
   &.-toggler {
     position: absolute;
-    right: 500px;
-    bottom: 20px;
+    right: 0;
+    bottom: 0;
     width: auto;
     width: auto;
     max-width: 64px;
@@ -27,17 +27,17 @@
     color: var(--sfcf-toggler-color);
     background-color: var(--sfcf-toggler-background);
     border-radius: 32px;
-    transition: max-width .35s ease-in-out;
+    transition: max-width .25s ease-in-out;
     overflow: hidden;
 
     &:hover {
-      max-width: 400px;
+      max-width: 250px;
 
       .sfcf__button {
         &-text {
           opacity: 1;
           transform: translateX(0);
-          transition-delay: 0;
+          transition: transform .25s ease-in-out, opacity .15s ease-in-out .075s;
         }
       }
     }
@@ -49,13 +49,13 @@
     white-space: nowrap;
     transform: translateX(100%);
     opacity: 0;
-    transition: transform .35s ease-in-out, opacity .25s ease-in-out .15s;
+    transition: transform .25s ease-in-out, opacity .15s ease-in-out 0s;
   }
 
   &-icon {
     position: absolute;
     right: 12px;
-    top: 50%;
+    top: calc(50% - 1px);
     width: 40px;
     height: 40px;
     max-width: unset;
