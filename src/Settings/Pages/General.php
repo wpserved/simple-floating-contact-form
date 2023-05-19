@@ -87,8 +87,11 @@ class General
     add_option('sfcf-color-text', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-text');
 
-    add_option('sfcf-color-input-text', '');
-    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-text');
+    add_option('sfcf-color-input-text-focus', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-text-focus');
+
+    add_option('fcf-color-input-placeholder', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'fcf-color-input-placeholder');
 
     add_option('sfcf-color-input-text-focus', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-text-focus');

@@ -6,3 +6,17 @@ body.--sfcf-opened {
     overflow: hidden;
   }
 }
+
+
+.sfcf {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  &__main {
+    background-color: var(--sfcf-main-background);
+    border-radius: 16px;
+    z-index: 101;
+    visibility: hidden; /* for testing */
+  }
+}

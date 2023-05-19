@@ -19,3 +19,25 @@ $c_success_icon: #3a1a86;
 
 //Fonts
 $f_main: 'Poppins';
+
+
+.sfcf {
+  --sfcf-font: 'Poppins';
+  --sfcf-primary: #6835CC;
+  --sfcf-secondary: #03E2AB;
+  --sfcf-white: #FFF;
+  --sfcf-red: #ff3e3e;
+  --sfcf-main-text: var(--sfcf-white);
+  --sfcf-main-background: var(--sfcf-primary);
+  --sfcf-toggler-background: var(--sfcf-primary);
+  --sfcf-toggler-color: var(--sfcf-white);
+  --sfcf-form-field-placeholder: #aaa;
+  --sfcf-form-field-text: #222;
+  --sfcf-form-field-text-focus: var(--sfcf-primary);
+  --sfcf-form-field-border: var(--sfcf-secondary);
+  --sfcf-term-link: var(--sfcf-secondary);
+  --sfcf-button-background: var(--sfcf-secondary);
+  --sfcf-button-text: var(--sfcf-white);
+  --sfcf-success-icon: #3a1a86;
+  --sfcf-error: #FF5900;
+}

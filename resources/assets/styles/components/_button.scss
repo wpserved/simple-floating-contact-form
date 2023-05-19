@@ -1,0 +1,66 @@
+.sfcf__button {
+  display: flex;
+  align-items: center;
+  appearance: none;
+  margin: 0;
+  padding: 8px 20px;
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 700;
+  color: var(--sfcf-button-text);
+  background-color: var(--sfcf-button-background);
+  border: unset;
+  border-radius: 20px;
+  box-shadow: unset;
+  cursor: pointer;
+
+  &.-toggler {
+    position: absolute;
+    right: 500px;
+    bottom: 20px;
+    width: auto;
+    width: auto;
+    max-width: 64px;
+    height: 64px;
+    padding: 8px 64px 8px 0;
+    color: var(--sfcf-toggler-color);
+    background-color: var(--sfcf-toggler-background);
+    border-radius: 32px;
+    transition: max-width .35s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+      max-width: 400px;
+
+      .sfcf__button {
+        &-text {
+          opacity: 1;
+          transform: translateX(0);
+          transition-delay: 0;
+        }
+      }
+    }
+  }
+
+  &-text {
+    position: relative;
+    margin-left: 20px;
+    white-space: nowrap;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform .35s ease-in-out, opacity .25s ease-in-out .15s;
+  }
+
+  &-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    max-width: unset;
+    max-height: unset;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+}

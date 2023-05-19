@@ -433,9 +433,12 @@ $displayOptions = new Display();
   <?php endif; ?>
 
   <div class="sfcf" data-sfcf>
-    <button class="sfcf__toggler" data-sfcf-toggler>
-      <?php echo esc_html($this->notes['toggler_btn']); ?>
-      <img src="<?php echo esc_url($this->notes['icon']); ?>" class="sfcf__toggler-icon" alt="support-icon"/>
+    <button class="sfcf__button -toggler" data-sfcf-toggler>
+      <span class="sfcf__button-text">
+        <?php echo esc_html($this->notes['toggler_btn']); ?>
+      </span>
+
+      <img class="sfcf__button-icon" src="<?php echo esc_url($this->notes['icon']); ?>" alt="support-icon"/>
     </button>
 
     <main class="sfcf__main" data-sfcf-main>

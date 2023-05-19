@@ -425,7 +425,7 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-bg">
-                  <?php echo esc_html(__('Form background color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Background color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
@@ -439,13 +439,27 @@ $display = new Display();
             <tr valign="top">
               <th scope="row">
                 <label for="sfcf-color-text">
-                  <?php echo esc_html(__('Form text color', 'simple-floating-contact-form')); ?>:
+                  <?php echo esc_html(__('Text color', 'simple-floating-contact-form')); ?>:
                 </label>
               </th>
 
               <td>
                 <fieldset>
                   <input type="text" class="regular-text sfcf-color" id="sfcf-color-text" name="sfcf-color-text" value="<?php echo esc_attr($display->printData()['color_text']); ?>" data-default-color="#FFF"/>
+                </fieldset>
+              </td>
+            </tr>
+
+            <tr valign="top">
+              <th scope="row">
+                <label for="sfcf-color-input-placeholder">
+                  <?php echo esc_html(__('Form input field placeholder color', 'simple-floating-contact-form')); ?>:
+                </label>
+              </th>
+
+              <td>
+                <fieldset>
+                  <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-placeholder" name="sfcf-color-input-placeholder" value="<?php echo esc_attr($display->printData()['color_input_placeholder']); ?>" data-default-color="#AAA"/>
                 </fieldset>
               </td>
             </tr>
