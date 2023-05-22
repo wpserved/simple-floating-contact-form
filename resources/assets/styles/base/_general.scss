@@ -11,11 +11,23 @@ body.--sfcf-opened {
   position: fixed;
   right: 16px;
   bottom: 16px;
+  z-index: 101;
 
   &__main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--sfcf-main-background);
-    border-radius: 16px;
-    z-index: 101;
-    visibility: hidden; /* for testing */
+    // visibility: hidden; /* for testing */
+
+    @media screen and (min-width: $lg) {
+      border-radius: 16px;
+    }
   }
+}
+
+#sfcf_contact_popup {
+  display: none !important;
 }
