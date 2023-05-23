@@ -7,7 +7,7 @@
 use SimpleFloatingContactForm\Module\Display\Display;
 $displayOptions = new Display();
 ?>
-
+<?php /*
 <?php if($displayOptions->shouldDisplayPopup()): ?>
   <div id="sfcf_contact_popup" class="sfcf__main-widget">
     <?php if($this->notes['no_style'] !== "true" && $this->notes['no_style'] !== "customizer"): ?>
@@ -265,6 +265,7 @@ $displayOptions = new Display();
     </a>
   </div>
 <?php endif; ?>
+*/ ?>
 
 <?php if ($displayOptions->shouldDisplayPopup()) : ?>
   <?php if ($this->notes['no_style'] !== "true" && $this->notes['no_style'] !== "customizer") : ?>

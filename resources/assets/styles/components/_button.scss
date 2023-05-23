@@ -5,7 +5,6 @@ body {
         display: flex;
         align-items: center;
         appearance: none;
-        max-width: fit-content;
         margin: 0;
         padding: 8px 20px;
         font-family: var(--font);
@@ -57,13 +56,21 @@ body {
           height: 64px;
           padding: 8px 64px 8px 0;
           color: var(--sfcf-toggler-color);
+          font-size: 14px;
           background-color: var(--sfcf-toggler-background);
           border-radius: 32px;
           transition: max-width .25s ease-in-out;
           overflow: hidden;
 
+          .sfcf__button {
+            &-text {
+              color: var(--sfcf-toggler-color);
+            }
+          }
+
           &:hover {
             max-width: 250px;
+            opacity: 1;
 
             .sfcf__button {
               &-text {

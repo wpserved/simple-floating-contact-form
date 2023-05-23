@@ -1,6 +1,7 @@
 @include fontFace('Poppins', 400, normal, 'Poppins', 'Regular');
 @include fontFace('Poppins', 700, normal, 'Poppins', 'Bold');
 
+/** to remove start **/
 #sfcf_contact_popup {
   font-family: $f_main;
   font-size: 14px;
@@ -28,8 +29,13 @@
     }
   }
 }
+/** to remove end **/
 
 body {
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   #sfcf {
     font-family: var(--sfcf-font);
 

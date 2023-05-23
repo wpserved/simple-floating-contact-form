@@ -22,7 +22,13 @@ body {
         width: 100vw;
         height: 100vh;
         background-color: var(--sfcf-main-background);
-        // visibility: hidden; /* for testing */
+        z-index: 2;
+        transform: translateX(100%);
+        transition: transform .25s ease-in-out;
+
+        &.-active {
+          transform: translateX(0%);
+        }
 
         @media screen and (min-width: $lg) {
           border-radius: 16px;
@@ -56,11 +62,20 @@ body {
         max-width: 324px;
         max-height: 240px;
         margin: 0 auto 30px auto;
+
+        .oval {
+          fill: var(--sfcf-success-icon);
+        }
+
+        polyline {
+          stroke: var(--sfcf-button-background);
+        }
       }
 
       &__footer {
         .sfcf__button {
           margin: 0 auto;
+          max-width: fit-content;
         }
       }
     }
