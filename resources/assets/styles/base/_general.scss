@@ -7,23 +7,35 @@ body.--sfcf-opened {
   }
 }
 
-.sfcf {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 101;
-
-  &__main {
+body {
+  #sfcf {
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--sfcf-main-background);
-    // visibility: hidden; /* for testing */
+    right: 16px;
+    bottom: 16px;
+    z-index: 99999;
 
-    @media screen and (min-width: $lg) {
-      border-radius: 16px;
+    .sfcf {
+      &__main {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--sfcf-main-background);
+        // visibility: hidden; /* for testing */
+
+        @media screen and (min-width: $lg) {
+          border-radius: 16px;
+        }
+      }
+
+      &__step {
+        padding: 16px 22px;
+      }
+
+      &__header {
+        margin-bottom: 24px;
+      }
     }
   }
 }

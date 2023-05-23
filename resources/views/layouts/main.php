@@ -432,7 +432,7 @@ $displayOptions = new Display();
     </style>
   <?php endif; ?>
 
-  <div class="sfcf" data-sfcf>
+  <div id="sfcf" class="sfcf" data-sfcf>
     <button class="sfcf__button -toggler" data-sfcf-toggler>
       <span class="sfcf__button-text">
         <?php echo esc_html($this->notes['toggler_btn']); ?>
