@@ -272,3 +272,92 @@
     }
   }
 }
+
+body {
+  #sfcf {
+    .sfcf {
+      &__form {
+        position: relative;
+        max-height: calc(100vh - 100px);
+        overflow: auto;
+
+        &-field {
+          &:not(.-checkbox) {
+            margin: 0 0 20px 0;
+            padding: 10px 22px;
+            color: var(--sfcf-form-field-text);
+            font-size: 16px;
+            background-color: var(--sfcf-white);
+            border: 1px solid var(--sfcf-form-field-border);
+            border-radius: 20px;
+            transition: color .25s ease-in-out;
+
+            &:focus {
+              color: var(--sfcf-form-field-text-focus);
+
+              &::placeholder {
+                color: var(--sfcf-form-field-text-focus);
+              }
+            }
+
+            &::placeholder {
+              color: var(--sfcf-form-field-placeholder);
+              transition: color .25s ease-in-out;
+            }
+
+            &:not(.-textarea) {
+              height: 40px;
+            }
+          }
+
+          &.-checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input {
+              appearance: none;
+              width: 20px;
+              height: 20px;
+              margin: 0;
+              background-color: var(--sfcf-white);
+              border-radius: 6px;
+              border: 1px solid var(--sfcf-form-field-border);
+              transition: background-color .25s ease-in-out;
+
+              &:checked {
+                background-color: var(--sfcf-form-field-border);
+              }
+            }
+
+            span {
+              max-width: calc(100% - 34px);
+            }
+          }
+
+          &-text {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+
+            a {
+              color: var(--sfcf-term-link);
+              text-decoration: underline;
+
+              &:hover {
+                color: var(--sfcf-term-link);
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        &-consent {
+          margin: 0 0 20px 0;
+          padding: 0;
+          border: unset;
+        }
+      }
+    }
+  }
+}

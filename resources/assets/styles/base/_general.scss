@@ -31,10 +31,37 @@ body {
 
       &__step {
         padding: 16px 22px;
+
+        &.-success {
+          text-align: center;
+
+          p {
+            max-width: 360px;
+            margin: 0 auto 30px auto;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
       }
 
       &__header {
         margin-bottom: 24px;
+
+        &.-success {
+          margin: 20px auto 24px auto;
+        }
+      }
+
+      &__success-icon {
+        max-width: 324px;
+        max-height: 240px;
+        margin: 0 auto 30px auto;
+      }
+
+      &__footer {
+        .sfcf__button {
+          margin: 0 auto;
+        }
       }
     }
   }

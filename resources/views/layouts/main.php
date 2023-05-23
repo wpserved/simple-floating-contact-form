@@ -480,7 +480,7 @@ $displayOptions = new Display();
           </h2>
         </header>
 
-        <figure class="scfc__success-icon">
+        <figure class="sfcf__success-icon">
             <?php if (! empty($this->notes['success_icon'])): ?>
               <img src="<?php echo esc_url($this->notes['success_icon']); ?>" alt="success" />
             <?php else :?>
@@ -514,7 +514,7 @@ $displayOptions = new Display();
             <?php endif; ?>
         </figure>
 
-        <footer class="scfc__footer">
+        <footer class="sfcf__footer">
           <p>
             <?php echo wp_kses($this->notes['success_note'], ['b' => [], 'br' => []]); ?><
           </p>

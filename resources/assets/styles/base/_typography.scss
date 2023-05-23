@@ -31,11 +31,24 @@
 
 body {
   #sfcf {
+    font-family: var(--sfcf-font);
+
+    * {
+      font-family: inherit;
+    }
+
     .sfcf {
       &__heading {
         margin: 0;
         font-size: 24px;
         line-height: 32px;
+
+        &.-success {
+          max-width: 300px;
+          margin: 0 auto;
+          font-size: 32px;
+          line-height: 40px;
+        }
       }
     }
 
