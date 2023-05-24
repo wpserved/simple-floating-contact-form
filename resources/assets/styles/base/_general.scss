@@ -31,15 +31,44 @@ body {
         }
 
         @media screen and (min-width: $lg) {
+          position: absolute;
+          left: unset;
+          right: 0;
+          top: unset;
+          bottom: 0;
           border-radius: 16px;
+          width: 550px;
+          height: auto;
+          transform: translateX(calc(100% + 16px));
         }
       }
 
       &__step {
         padding: 16px 22px;
+        transition: opacity .25s ease-in-out, visibility .25s ease-in-out;
+
+        &.-hidding {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &.-hide {
+          display: none;
+        }
 
         &.-success {
+          display: none;
+          padding-top: 32px;
+          padding-bottom: 32px;
           text-align: center;
+          opacity: 0;
+          visibility: hidden;
+
+          &.-show {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+          }
 
           p {
             max-width: 360px;
@@ -52,10 +81,6 @@ body {
 
       &__header {
         margin-bottom: 24px;
-
-        &.-success {
-          margin: 20px auto 24px auto;
-        }
       }
 
       &__success-icon {

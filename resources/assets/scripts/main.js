@@ -219,7 +219,7 @@ jQuery(function($) {
         const $formData = $form.serializeArray();
         const $formInputs = $form.find('input, textarea, checkbox');
         const $errorClass = '-error';
-        const $hasErros = false;
+        let $hasErros = false;
 
         [...$formInputs].map((elem) => {
           const val = $(elem).val();
@@ -254,13 +254,19 @@ jQuery(function($) {
             inputs: $formData
           }
         })
+
         .done(function($response) {
           if ($response['success']) {
             const $formStep = $form.parents('[data-sfcf-step="form"]');
-            const $successStep = $form.parents('[data-sfcf-step="success"]');
+            const $successStep = $elem.find('[data-sfcf-step="success"]');
 
-            $formStep.addClass('-hide');
-            $successStep.addClass('-show');
+            $formStep.addClass('-hidding');
+
+            setTimeout(function() {
+              $formStep.addClass('-hide');
+              $formStep.removeClass('-hidding');
+              $successStep.addClass('-show');
+            }, 250);
           } else {
             $.each($response['data'], function() {
               const $current = $(this);
@@ -272,14 +278,15 @@ jQuery(function($) {
             });
           }
         })
+
         .fail(function($errors) {
           console.log($errors);
         });
       });
 
       // remove error class on focus
-      $form.on('focus', '.sfcf_error', function() {
-        $(this).removeClass('sfcf_error');
+      $form.on('focus', '.-error', function() {
+        $(this).removeClass('-error');
       });
     }
   });

@@ -285,21 +285,34 @@ body {
 
         &-field {
           &:not(.-checkbox) {
+            width: 100%;
+            max-width: unset;
             margin: 0 0 20px 0;
             padding: 10px 22px;
             color: var(--sfcf-form-field-text);
             font-size: 16px;
             background-color: var(--sfcf-white);
-            border: 1px solid var(--sfcf-form-field-border);
+            border: unset;
+            box-shadow: inset 0 0 0 1px var(--sfcf-form-field-border);
             border-radius: 20px;
-            transition: color .25s ease-in-out;
+            transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
+
+            &.-error {
+              box-shadow: inset 0 0 0 2px var(--sfcf-red);
+
+              &:hover,
+              &:focus {
+                box-shadow: inset 0 0 0 2px var(--sfcf-form-field-border);
+              }
+            }
 
             &:focus {
               color: var(--sfcf-form-field-text-focus);
+            }
 
-              &::placeholder {
-                color: var(--sfcf-form-field-text-focus);
-              }
+            &:hover,
+            &:focus {
+              box-shadow: inset 0 0 0 2px var(--sfcf-form-field-border);
             }
 
             &::placeholder {
@@ -324,15 +337,21 @@ body {
               margin: 0;
               background-color: var(--sfcf-white);
               border-radius: 6px;
-              border: 1px solid var(--sfcf-form-field-border);
-              transition: background-color .25s ease-in-out;
+              border: unset;
+              box-shadow: inset 0 0 0 1px var(--sfcf-form-field-border);
+              transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
 
               &:checked {
                 background-color: var(--sfcf-form-field-border);
               }
+
+              &.-error {
+                box-shadow: inset 0 0 0 2px var(--sfcf-red);
+              }
             }
 
             span {
+              flex-basis: calc(100% - 34px);
               max-width: calc(100% - 34px);
             }
           }
@@ -355,7 +374,7 @@ body {
         }
 
         &-consent {
-          margin: 0 0 20px 0;
+          margin: 0 0 24px 0;
           padding: 0;
           border: unset;
         }
