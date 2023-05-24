@@ -80,7 +80,6 @@ class Display
     $this->notes['color_terms_link'] = get_option('sfcf-color-terms-link') ?: '#03E2AB';
     $this->notes['color_btn'] = get_option('sfcf-color-btn') ?: '#03E2AB';
     $this->notes['color_btn_text'] = get_option('sfcf-color-btn-text') ?: '#FFF';
-    $this->notes['color_btn_border_hover'] = get_option('sfcf-color-btn-border-hover') ?: '#03E2AB';
     $this->notes['color_success_icon'] = get_option('sfcf-color-success-icon') ?: '#3A1A86';
 
     $this->notes['display_pages'] = get_option('sfcf-display-pages') ?: '';
