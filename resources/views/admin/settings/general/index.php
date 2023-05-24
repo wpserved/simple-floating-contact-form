@@ -387,6 +387,39 @@ $display = new Display();
           </tr>
         </table>
 
+        <h2 class="title">
+          <?php echo esc_html(__('Rounded corners and rounded form fields', 'simple-floating-contact-form')); ?>
+        </h2>
+        <p></p>
+
+        <table class="form-table" role="presentation">
+          <tr valign="top">
+            <th scope="row">
+              <label for="sfcf-corners-square">
+                <?php echo esc_html(__('Choose corners style', 'simple-floating-contact-form')); ?>:
+              </label>
+            </th>
+
+            <td>
+              <fieldset>
+                <input type="radio" class="regular-text" id="sfcf-corners-square" name="sfcf-corners-square" value="false" <?php if (get_option('sfcf-corners-square') == "false" || get_option('sfcf-corners-square') == "" ) { echo "checked"; }; ?>>
+
+                <label for="sfcf-corners-square">
+                  <?php _e('Rounded corners (default)', 'simple-floating-contact-form'); ?>
+                </label>
+
+                <br>
+
+                <input type="radio" class="regular-text" id="sfcf-corners-square-true" name="sfcf-corners-square" value="true" <?php if (get_option('sfcf-corners-square') == "true") { echo "checked"; }; ?>>
+
+                <label for="sfcf-corners-square-true">
+                  <?php _e('Square corners', 'simple-floating-contact-form'); ?>
+                </label>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+
         <?php if(get_option('sfcf-no-styling-option') !== "true" && get_option('sfcf-no-styling-option') !== "customizer"): ?>
           <h2 class="title">
             <?php echo esc_html(__('Color Settings', 'simple-floating-contact-form')); ?>

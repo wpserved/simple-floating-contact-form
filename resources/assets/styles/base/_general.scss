@@ -31,7 +31,7 @@ body {
           right: 0;
           top: unset;
           bottom: 0;
-          border-radius: 16px;
+          border-radius: var(--sfcf-radius-medium);
           width: 550px;
           height: auto;
           transform: translateX(calc(100% + 16px));

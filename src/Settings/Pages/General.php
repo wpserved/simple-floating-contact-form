@@ -75,6 +75,9 @@ class General
     add_option('sfcf-no-styling-option', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-no-styling-option');
 
+    add_option('sfcf-corners-square', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-corners-square');
+
     add_option('sfcf-color-toggle', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggle');
 

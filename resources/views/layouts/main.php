@@ -49,6 +49,17 @@ $displayOptions = new Display();
     </style>
   <?php endif; ?>
 
+  <?php if ($this->notes['square_corners'] == "true") : ?>
+    <style scoped>
+      .sfcf {
+        --sfcf-radius-huge: 0px;
+        --sfcf-radius-big: 0px;
+        --sfcf-radius-medium: 0px;
+        --sfcf-radius-small: 0px;
+      }
+    </style>
+  <?php endif; ?>
+
   <div id="sfcf" class="sfcf" data-sfcf>
     <button class="sfcf__button -toggler" data-sfcf-toggler>
       <span class="sfcf__button-text">
