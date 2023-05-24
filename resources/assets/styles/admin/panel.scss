@@ -8,8 +8,8 @@
         margin: auto 1rem auto 0;
 
         &.--red {
-          color: $c_red;
-          border-color: $c_red;
+          color: var(--sfcf-red);
+          border-color: var(--sfcf-red);
         }
       }
     }

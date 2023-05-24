@@ -25,6 +25,10 @@ body {
           opacity: .88;
         }
 
+        &:focus {
+          outline: 0;
+        }
+
         &-text {
           position: relative;
           margin-left: 20px;
@@ -69,7 +73,7 @@ body {
           }
 
           &:hover {
-            max-width: 250px;
+            max-width: 400px;
             opacity: 1;
 
             .sfcf__button {

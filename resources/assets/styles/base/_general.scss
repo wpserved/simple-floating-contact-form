@@ -1,18 +1,13 @@
-body.--sfcf-opened {
-  overflow: hidden;
-  height: 100vh;
-
-  html & {
-    overflow: hidden;
-  }
-}
-
 body {
   #sfcf {
     position: fixed;
     right: 16px;
     bottom: 16px;
     z-index: 99999;
+
+    * {
+      box-sizing: border-box;
+    }
 
     .sfcf {
       &__main {
@@ -80,6 +75,7 @@ body {
       }
 
       &__header {
+        margin-top: 5px;
         margin-bottom: 24px;
       }
 
@@ -105,8 +101,4 @@ body {
       }
     }
   }
-}
-
-#sfcf_contact_popup {
-  display: none !important;
 }
