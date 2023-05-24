@@ -57,6 +57,37 @@ $displayOptions = new Display();
         --sfcf-radius-medium: 0px;
         --sfcf-radius-small: 0px;
       }
+
+      body #sfcf .sfcf__form-field:not(.-checkbox) {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+    </style>
+  <?php endif; ?>
+
+  <?php if ($this->notes['placement_left'] == "true") : ?>
+    <style scoped>
+      body #sfcf {
+        left: 16px;
+        right: unset;
+      }
+
+      body #sfcf .sfcf__button.-toggler {
+        left: 0;
+        right: unset;
+      }
+
+      body #sfcf .sfcf__main {
+        transform: translateX(-100%);
+      }
+
+      @media screen and (min-width: 992px) {
+        body #sfcf .sfcf__main {
+          left: 0;
+          right: unset;
+          transform: translateX(calc(-100% - 16px));
+        }
+      }
     </style>
   <?php endif; ?>
 

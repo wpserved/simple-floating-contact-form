@@ -420,6 +420,39 @@ $display = new Display();
           </tr>
         </table>
 
+        <h2 class="title">
+          <?php echo esc_html(__('Where to display the icon and the form', 'simple-floating-contact-form')); ?>
+        </h2>
+        <p></p>
+
+        <table class="form-table" role="presentation">
+          <tr valign="top">
+            <th scope="row">
+              <label for="sfcf-placement-left">
+                <?php echo esc_html(__('Choose placement', 'simple-floating-contact-form')); ?>:
+              </label>
+            </th>
+
+            <td>
+              <fieldset>
+                <input type="radio" class="regular-text" id="sfcf-placement-left" name="sfcf-placement-left" value="false" <?php if (get_option('sfcf-placement-left') == "false" || get_option('sfcf-placement-left') == "" ) { echo "checked"; }; ?>>
+
+                <label for="sfcf-placement-left">
+                  <?php _e('Bottom Right', 'simple-floating-contact-form'); ?>
+                </label>
+
+                <br>
+
+                <input type="radio" class="regular-text" id="sfcf-placement-left-true" name="sfcf-placement-left" value="true" <?php if (get_option('sfcf-placement-left') == "true") { echo "checked"; }; ?>>
+
+                <label for="sfcf-placement-left-true">
+                  <?php _e('Bottom Left', 'simple-floating-contact-form'); ?>
+                </label>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+
         <?php if(get_option('sfcf-no-styling-option') !== "true" && get_option('sfcf-no-styling-option') !== "customizer"): ?>
           <h2 class="title">
             <?php echo esc_html(__('Color Settings', 'simple-floating-contact-form')); ?>

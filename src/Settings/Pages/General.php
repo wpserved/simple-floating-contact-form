@@ -78,6 +78,9 @@ class General
     add_option('sfcf-corners-square', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-corners-square');
 
+    add_option('sfcf-placement-left', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-placement-left');
+
     add_option('sfcf-color-toggle', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggle');
 
