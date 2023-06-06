@@ -1,7 +1,8 @@
 body {
   [data-preview] {
     #sfcf.-preview {
-      position: static;
+      position: sticky;
+      top: 40px;
 
       .sfcf {
         &__button {

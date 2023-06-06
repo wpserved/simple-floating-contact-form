@@ -1,4 +1,6 @@
 import "@babel/polyfill";
+import { preview } from "./components/preview";
+
 
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
@@ -73,3 +75,5 @@ jQuery(function($) {
     $('.sfcf-color').wpColorPicker();
   });
 });
+
+preview();

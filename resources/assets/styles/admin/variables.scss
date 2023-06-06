@@ -1,0 +1,15 @@
+:root,
+.sfcf {
+  --sfcf-main-text: var(--sfcf-color-text);
+  --sfcf-main-background: var(--sfcf-color-bg);
+  --sfcf-toggler-background: var(--sfcf-color-toggle);
+  --sfcf-toggler-color: var(--sfcf-color-toggler-text);
+  --sfcf-form-field-placeholder: var(--sfcf-color-input-placeholder);
+  --sfcf-form-field-text: var(--sfcf-color-input-text);
+  --sfcf-form-field-text-focus: var(--sfcf-color-input-text-focus);
+  --sfcf-form-field-border: var(--sfcf-color-input-border);
+  --sfcf-term-link: var(--sfcf-color-terms-link);
+  --sfcf-button-background: var(--sfcf-color-btn);
+  --sfcf-button-text: var(--sfcf-color-btn-text);
+  --sfcf-success-icon: var(--sfcf-color-success-icon);
+}

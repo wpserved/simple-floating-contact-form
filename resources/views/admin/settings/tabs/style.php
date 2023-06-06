@@ -1,5 +1,5 @@
 <div class="sfcf-tab__panel-2">
-  <div class="sfcf-tab__columns">
+  <div class="sfcf-tab__columns sfcf">
     <div class="sfcf-tab__column -left" data-settings>
       <h2 class="title">
         <?php echo esc_html(__('Styling options (optional)', 'simple-floating-contact-form')); ?>
@@ -118,7 +118,7 @@
         </h2>
         <p></p>
 
-        <table class="form-table" role="presentation">
+        <table class="form-table" role="presentation" data-color-inputs>
           <tr valign="top">
             <th scope="row">
               <label for="sfcf-color-toggle">
@@ -127,7 +127,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-toggle" name="sfcf-color-toggle" value="<?php echo esc_attr($display->printData()['color_toggle']); ?>" data-default-color="#6835CC"/>
               </fieldset>
             </td>
@@ -141,7 +141,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-toggler-text" name="sfcf-color-toggler-text" value="<?php echo esc_attr($display->printData()['color_toggler_text']); ?>" data-default-color="#FFF"/>
               </fieldset>
             </td>
@@ -155,7 +155,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-bg" name="sfcf-color-bg" value="<?php echo esc_attr($display->printData()['color_bg']); ?>" data-default-color="#6835CC"/>
               </fieldset>
             </td>
@@ -169,7 +169,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-text" name="sfcf-color-text" value="<?php echo esc_attr($display->printData()['color_text']); ?>" data-default-color="#FFF"/>
               </fieldset>
             </td>
@@ -183,7 +183,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-placeholder" name="sfcf-color-input-placeholder" value="<?php echo esc_attr($display->printData()['color_input_placeholder']); ?>" data-default-color="#AAA"/>
               </fieldset>
             </td>
@@ -197,7 +197,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-text" name="sfcf-color-input-text" value="<?php echo esc_attr($display->printData()['color_input_text']); ?>" data-default-color="#222"/>
               </fieldset>
             </td>
@@ -211,7 +211,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-text-focus" name="sfcf-color-input-text-focus" value="<?php echo esc_attr($display->printData()['color_input_text_focus']); ?>" data-default-color="#6835CC"/>
               </fieldset>
             </td>
@@ -225,7 +225,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-input-border" name="sfcf-color-input-border" value="<?php echo esc_attr($display->printData()['color_input_border']); ?>" data-default-color="#03E2AB"/>
               </fieldset>
             </td>
@@ -239,7 +239,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-terms-link" name="sfcf-color-terms-link" value="<?php echo esc_attr($display->printData()['color_terms_link']); ?>" data-default-color="#03E2AB"/>
               </fieldset>
             </td>
@@ -253,7 +253,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-btn" name="sfcf-color-btn" value="<?php echo esc_attr($display->printData()['color_btn']); ?>" data-default-color="#03E2AB"/>
               </fieldset>
             </td>
@@ -267,7 +267,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-btn-text" name="sfcf-color-btn-text" value="<?php echo esc_attr($display->printData()['color_btn_text']); ?>" data-default-color="#FFF"/>
               </fieldset>
             </td>
@@ -281,7 +281,7 @@
             </th>
 
             <td>
-              <fieldset>
+              <fieldset data-color-input>
                 <input type="text" class="regular-text sfcf-color" id="sfcf-color-success-icon" name="sfcf-color-success-icon" value="<?php echo esc_attr($display->printData()['color_success_icon']); ?>" data-default-color="#3A1A86"/>
               </fieldset>
             </td>
