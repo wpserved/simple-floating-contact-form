@@ -387,73 +387,73 @@ $display = new Display();
           </tr>
         </table>
 
-        <h2 class="title">
-          <?php echo esc_html(__('Rounded corners and rounded form fields', 'simple-floating-contact-form')); ?>
-        </h2>
-        <p></p>
+        <?php if (get_option('sfcf-no-styling-option') !== "true" && get_option('sfcf-no-styling-option') !== "customizer"): ?>
+          <h2 class="title">
+            <?php echo esc_html(__('Rounded corners and rounded form fields', 'simple-floating-contact-form')); ?>
+          </h2>
+          <p></p>
 
-        <table class="form-table" role="presentation">
-          <tr valign="top">
-            <th scope="row">
-              <label for="sfcf-corners-square">
-                <?php echo esc_html(__('Choose corners style', 'simple-floating-contact-form')); ?>:
-              </label>
-            </th>
-
-            <td>
-              <fieldset>
-                <input type="radio" class="regular-text" id="sfcf-corners-square" name="sfcf-corners-square" value="false" <?php if (get_option('sfcf-corners-square') == "false" || get_option('sfcf-corners-square') == "" ) { echo "checked"; }; ?>>
-
+          <table class="form-table" role="presentation">
+            <tr valign="top">
+              <th scope="row">
                 <label for="sfcf-corners-square">
-                  <?php _e('Rounded corners (default)', 'simple-floating-contact-form'); ?>
+                  <?php echo esc_html(__('Choose corners style', 'simple-floating-contact-form')); ?>:
                 </label>
+              </th>
 
-                <br>
+              <td>
+                <fieldset>
+                  <input type="radio" class="regular-text" id="sfcf-corners-square" name="sfcf-corners-square" value="false" <?php if (get_option('sfcf-corners-square') == "false" || get_option('sfcf-corners-square') == "" ) { echo "checked"; }; ?>>
 
-                <input type="radio" class="regular-text" id="sfcf-corners-square-true" name="sfcf-corners-square" value="true" <?php if (get_option('sfcf-corners-square') == "true") { echo "checked"; }; ?>>
+                  <label for="sfcf-corners-square">
+                    <?php _e('Rounded corners (default)', 'simple-floating-contact-form'); ?>
+                  </label>
 
-                <label for="sfcf-corners-square-true">
-                  <?php _e('Square corners', 'simple-floating-contact-form'); ?>
-                </label>
-              </fieldset>
-            </td>
-          </tr>
-        </table>
+                  <br>
 
-        <h2 class="title">
-          <?php echo esc_html(__('Where to display the icon and the form', 'simple-floating-contact-form')); ?>
-        </h2>
-        <p></p>
+                  <input type="radio" class="regular-text" id="sfcf-corners-square-true" name="sfcf-corners-square" value="true" <?php if (get_option('sfcf-corners-square') == "true") { echo "checked"; }; ?>>
 
-        <table class="form-table" role="presentation">
-          <tr valign="top">
-            <th scope="row">
-              <label for="sfcf-placement-left">
-                <?php echo esc_html(__('Choose placement', 'simple-floating-contact-form')); ?>:
-              </label>
-            </th>
+                  <label for="sfcf-corners-square-true">
+                    <?php _e('Square corners', 'simple-floating-contact-form'); ?>
+                  </label>
+                </fieldset>
+              </td>
+            </tr>
+          </table>
 
-            <td>
-              <fieldset>
-                <input type="radio" class="regular-text" id="sfcf-placement-left" name="sfcf-placement-left" value="false" <?php if (get_option('sfcf-placement-left') == "false" || get_option('sfcf-placement-left') == "" ) { echo "checked"; }; ?>>
+          <h2 class="title">
+            <?php echo esc_html(__('Where to display the icon and the form', 'simple-floating-contact-form')); ?>
+          </h2>
+          <p></p>
 
+          <table class="form-table" role="presentation">
+            <tr valign="top">
+              <th scope="row">
                 <label for="sfcf-placement-left">
-                  <?php _e('Bottom Right', 'simple-floating-contact-form'); ?>
+                  <?php echo esc_html(__('Choose placement', 'simple-floating-contact-form')); ?>:
                 </label>
+              </th>
 
-                <br>
+              <td>
+                <fieldset>
+                  <input type="radio" class="regular-text" id="sfcf-placement-left" name="sfcf-placement-left" value="false" <?php if (get_option('sfcf-placement-left') == "false" || get_option('sfcf-placement-left') == "" ) { echo "checked"; }; ?>>
 
-                <input type="radio" class="regular-text" id="sfcf-placement-left-true" name="sfcf-placement-left" value="true" <?php if (get_option('sfcf-placement-left') == "true") { echo "checked"; }; ?>>
+                  <label for="sfcf-placement-left">
+                    <?php _e('Bottom Right', 'simple-floating-contact-form'); ?>
+                  </label>
 
-                <label for="sfcf-placement-left-true">
-                  <?php _e('Bottom Left', 'simple-floating-contact-form'); ?>
-                </label>
-              </fieldset>
-            </td>
-          </tr>
-        </table>
+                  <br>
 
-        <?php if(get_option('sfcf-no-styling-option') !== "true" && get_option('sfcf-no-styling-option') !== "customizer"): ?>
+                  <input type="radio" class="regular-text" id="sfcf-placement-left-true" name="sfcf-placement-left" value="true" <?php if (get_option('sfcf-placement-left') == "true") { echo "checked"; }; ?>>
+
+                  <label for="sfcf-placement-left-true">
+                    <?php _e('Bottom Left', 'simple-floating-contact-form'); ?>
+                  </label>
+                </fieldset>
+              </td>
+            </tr>
+          </table>
+
           <h2 class="title">
             <?php echo esc_html(__('Color Settings', 'simple-floating-contact-form')); ?>
           </h2>
