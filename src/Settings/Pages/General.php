@@ -14,8 +14,8 @@ class General
    */
   public function addPage()
   {
-    add_options_page(__('General Settings', 'simple-floating-contact-form'), __('Simple Floating Contact Form', 'simple-floating-contact-form'), 'manage_options', 'simple-floating-contact-form-general', function () {
-      include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/general/index.php';
+    add_options_page(__('Settings', 'simple-floating-contact-form'), __('Simple Floating Contact Form', 'simple-floating-contact-form'), 'manage_options', 'simple-floating-contact-form-general', function () {
+      include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/index.php';
     });
   }
 

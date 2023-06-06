@@ -12,7 +12,7 @@
 
   &__nav {
     margin-top: 25px;
-    
+
     ul {
       display: flex;
       list-style: none;
@@ -38,10 +38,19 @@
         }
 
         &:not(:last-child) label {
-           border-right-width: 0; 
+           border-right-width: 0;
         }
       }
     }
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    flex-basis: 48%;
   }
 
   #option-tab1:checked ~ &__nav &__button-1,

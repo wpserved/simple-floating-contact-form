@@ -1,5 +1,16 @@
 @import
   'abstracts/variables',
-  'abstracts/mixins',
+  'abstracts/mixins';
+
+@import
   'admin/panel',
-  'admin/tabs';
+  'admin/tabs',
+  'admin/preview/main';
+
+@import
+  'base/general',
+  'base/typography';
+
+@import
+  'components/button',
+  'components/form.scss';

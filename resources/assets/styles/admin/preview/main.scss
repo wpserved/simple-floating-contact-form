@@ -1,0 +1,21 @@
+body {
+  [data-preview] {
+    #sfcf.-preview {
+      position: static;
+
+      .sfcf {
+        &__button {
+          &.-toggler {
+            position: static;
+            margin-bottom: 40px;
+          }
+        }
+
+        &__main {
+          position: relative;
+          transform: unset;
+        }
+      }
+    }
+  }
+}
