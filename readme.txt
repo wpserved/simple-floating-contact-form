@@ -54,6 +54,7 @@ Update the "Tested up to" value
 Update fields label
 Update tab description
 Rewrite the frontend layer
+Add preview feature
 
 = 1.2.6 =
 Add fields to customize success view
