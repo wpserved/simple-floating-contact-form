@@ -7,15 +7,26 @@ $xl: '1200px';
 $xxl: '1440px';
 $xxxl: '1921px';
 
-// Colors
-$c_primary: #6835CC;
-$c_secondary: #03E2AB;
-$c_text: #6E5F8B;
-$c_white: #FFF;
-$c_error: #FF5900;
-$c_red: #ff3e3e;
-$c_success_icon: #3a1a86;
-
-
-//Fonts
-$f_main: 'Poppins';
+.sfcf {
+  --sfcf-font: 'Poppins';
+  --sfcf-primary: #6835CC;
+  --sfcf-secondary: #03E2AB;
+  --sfcf-white: #FFF;
+  --sfcf-red: #ff3e3e;
+  --sfcf-main-text: var(--sfcf-white);
+  --sfcf-main-background: var(--sfcf-primary);
+  --sfcf-toggler-background: var(--sfcf-primary);
+  --sfcf-toggler-color: var(--sfcf-white);
+  --sfcf-form-field-placeholder: #aaa;
+  --sfcf-form-field-text: #222;
+  --sfcf-form-field-text-focus: var(--sfcf-primary);
+  --sfcf-form-field-border: var(--sfcf-secondary);
+  --sfcf-term-link: var(--sfcf-secondary);
+  --sfcf-button-background: var(--sfcf-secondary);
+  --sfcf-button-text: var(--sfcf-white);
+  --sfcf-success-icon: #3a1a86;
+  --sfcf-radius-huge: 32px;
+  --sfcf-radius-big: 20px;
+  --sfcf-radius-medium: 16px;
+  --sfcf-radius-small: 6px;
+}

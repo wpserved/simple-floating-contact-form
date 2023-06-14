@@ -3,8 +3,8 @@ Contributors: wpserved
 Donate link: https://wpserved.com/
 Tags: contact form, floating form, popup contact form, floating contact form, contact button, simple contact form
 Requires at least: 5.4
-Tested up to: 6.1
-Stable tag: 1.2.6
+Tested up to: 6.2
+Stable tag: 1.2.7
 Requires PHP: 7.2
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -49,6 +49,16 @@ You can find the plugin’s source code on our GitHub repo page. Feel free to pl
 1. So Simple! Sooo Easy!
 
 == Changelog ==
+= 1.2.7 =
+Update the "Tested up to" value
+Update fields label
+Update tab description
+Rewrite the frontend layer
+Add preview feature
+
+= 1.2.6 =
+Add fields to customize success view
+
 = 1.2.4 =
 Hotfix with description of email recipient field
 

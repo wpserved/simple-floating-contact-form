@@ -1,31 +1,46 @@
 @include fontFace('Poppins', 400, normal, 'Poppins', 'Regular');
 @include fontFace('Poppins', 700, normal, 'Poppins', 'Bold');
 
-
-#sfcf_contact_popup {
-  font-family: $f_main;
-  font-size: 14px;
+body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $f_main;
-    font-weight: bold;
-  }
+  #sfcf {
+    font-family: var(--sfcf-font);
 
-  a {
-    color: $c_white;
-    text-decoration: underline;
+    * {
+      font-family: inherit;
+    }
 
-    &:hover,
-    &:focus {
-      color: $c_secondary;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+    }
+
+    .sfcf {
+      &__heading {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+
+        &.-success {
+          max-width: 300px;
+          margin: 0 auto;
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .sfcf__heading,
+    span,
+    p {
+      color: var(--sfcf-main-text);
     }
   }
 }

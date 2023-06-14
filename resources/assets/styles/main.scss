@@ -1,6 +1,5 @@
 @import
   'abstracts/variables',
-  'abstracts/functions',
   'abstracts/mixins';
 
 @import
@@ -8,5 +7,5 @@
   'base/typography';
 
 @import
-  'components/form.scss',
-  'components/main-widget.scss';
+  'components/button',
+  'components/form.scss';

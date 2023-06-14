@@ -69,17 +69,19 @@ class Display
     $this->notes['success_icon'] = get_option('sfcf-success-icon');
 
     $this->notes['no_style'] = get_option('sfcf-no-styling-option') ?: 'false';
+    $this->notes['square_corners'] = get_option('sfcf-corners-square') ?: 'false';
+    $this->notes['placement_left'] = get_option('sfcf-placement-left') ?: 'false';
     $this->notes['color_toggle'] = get_option('sfcf-color-toggle') ?: '#6835CC';
     $this->notes['color_toggler_text'] = get_option('sfcf-color-toggler-text') ?: '#FFF';
     $this->notes['color_bg'] = get_option('sfcf-color-bg') ?: '#6835CC';
     $this->notes['color_text'] = get_option('sfcf-color-text') ?: '#FFF';
+    $this->notes['color_input_placeholder'] = get_option('sfcf-color-input-placeholder') ?: '#AAA';
     $this->notes['color_input_text'] = get_option('sfcf-color-input-text') ?: '#222';
     $this->notes['color_input_text_focus'] = get_option('sfcf-color-input-text-focus') ?: '#6835CC';
     $this->notes['color_input_border'] = get_option('sfcf-color-input-border') ?: '#03E2AB';
     $this->notes['color_terms_link'] = get_option('sfcf-color-terms-link') ?: '#03E2AB';
     $this->notes['color_btn'] = get_option('sfcf-color-btn') ?: '#03E2AB';
     $this->notes['color_btn_text'] = get_option('sfcf-color-btn-text') ?: '#FFF';
-    $this->notes['color_btn_border_hover'] = get_option('sfcf-color-btn-border-hover') ?: '#03E2AB';
     $this->notes['color_success_icon'] = get_option('sfcf-color-success-icon') ?: '#3A1A86';
 
     $this->notes['display_pages'] = get_option('sfcf-display-pages') ?: '';

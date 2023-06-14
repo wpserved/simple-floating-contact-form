@@ -6,82 +6,52 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 jQuery(function($) {
   $(document).ready(function() {
-    let $elem = $('#sfcf_contact_popup');
+    const $elem = $('[data-sfcf]');
 
     if ($elem) {
-      let $toggler = $elem.find('a[data-js="sfcf-toggler"]');
-      let $close = $elem.find('a[data-js="sfcf-close"]');
+      const $toggler = $elem.find('[data-sfcf-toggler]');
+      const $close = $elem.find('[data-sfcf-close]');
+      const $main = $elem.find('[data-sfcf-main]');
 
-      window.addEventListener('scroll', () => {
-        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-      });
-
-      //Open form popup
       $($toggler).on('click', function(e) {
         e.preventDefault();
         const $width = window.innerWidth;
         const $mobileBreakpoint = 993;
 
-        if ($elem.hasClass('visible')) {
-          $elem.removeClass('visible');
-
-          if ($width < $mobileBreakpoint) {
-            const body = document.body;
-            const scrollY = body.style.top;
-            body.style.position = '';
-            body.style.top = '';
-            window.scrollTo(0, parseInt(scrollY || '0') * -1);
-          }
+        if ($main.hasClass('-active')) {
+          $main.removeClass('-active');
         }
         else {
-          $elem.addClass('visible');
+          $main.addClass('-active');
 
           setTimeout(function() {
             $elem.find('input').first().focus();
           }, 455);
-
-          if ($width < $mobileBreakpoint) {
-            const scrollY  = document.documentElement.style.getPropertyValue('--scroll-y');
-            const body = document.body;
-            body.style.position = 'fixed';
-            body.style.top = `-${scrollY}`;
-          }
         }
       });
 
-      // Close form popup
       $($close).on('click', function(e) {
         e.preventDefault();
         const $width = window.innerWidth;
         const $mobileBreakpoint = 993;
 
-        if ($elem.hasClass('visible')) {
-          $elem.removeClass('visible');
-
-          if ($width < $mobileBreakpoint) {
-            const body = document.body;
-            const scrollY = body.style.top;
-            body.style.position = '';
-            body.style.top = '';
-            window.scrollTo(0, parseInt(scrollY || '0') * -1);
-          }
+        if ($main.hasClass('-active')) {
+          $main.removeClass('-active');
         }
       })
 
-      // Form submit
-      var $form = $elem.find('form');
+      const $form = $elem.find('[data-sfcf-form]');
 
       $form.on('submit', function(e) {
         e.preventDefault();
 
         const $formData = $form.serializeArray();
         const $formInputs = $form.find('input, textarea, checkbox');
-        const $errorClass = 'sfcf_error';
-        var $hasErros = false;
+        const $errorClass = '-error';
+        let $hasErros = false;
 
         [...$formInputs].map((elem) => {
-          let val = $(elem).val();
-          let type = elem.getAttribute('type');
+          const val = $(elem).val();
 
           if ($elem.hasClass($errorClass)) {
             $(elem).removeClass($errorClass);
@@ -93,7 +63,7 @@ jQuery(function($) {
               $hasErros = true;
             }
 
-            if ("checkbox"  === elem.type && false === elem.checked) {
+            if ("checkbox" === elem.type && false === elem.checked) {
               $(elem).addClass($errorClass);
               $hasErros = true;
             }
@@ -113,33 +83,39 @@ jQuery(function($) {
             inputs: $formData
           }
         })
+
         .done(function($response) {
           if ($response['success']) {
-            var $formWrapper = $form.parents('#sfcf_form_wrapper');
-            var $successClass = 'sfcf_sent';
+            const $formStep = $form.parents('[data-sfcf-step="form"]');
+            const $successStep = $elem.find('[data-sfcf-step="success"]');
 
-            $formWrapper.addClass($successClass)
+            $formStep.addClass('-hidding');
+
+            setTimeout(function() {
+              $formStep.addClass('-hide');
+              $formStep.removeClass('-hidding');
+              $successStep.addClass('-show');
+            }, 250);
           } else {
             $.each($response['data'], function() {
-              var $current = $(this);
-              var $input = $elem.find('input[name='+$current[0]['code']+'], textarea[name='+$current[0]['code']+']');
-
-              console.log($input);
+              const $current = $(this);
+              const $input = $elem.find('input[name='+$current[0]['code']+'], textarea[name='+$current[0]['code']+']');
 
               if ($input.length > 0) {
-                $input.addClass(errorClass);
+                $input.addClass($errorClass);
               }
             });
           }
         })
+
         .fail(function($errors) {
           console.log($errors);
         });
       });
 
       // remove error class on focus
-      $form.on('focus', '.sfcf_error', function() {
-        $(this).removeClass('sfcf_error');
+      $form.on('focus', '.-error', function() {
+        $(this).removeClass('-error');
       });
     }
   });

@@ -14,8 +14,8 @@ class General
    */
   public function addPage()
   {
-    add_options_page(__('General Settings', 'simple-floating-contact-form'), __('Simple Floating Contact Form', 'simple-floating-contact-form'), 'manage_options', 'simple-floating-contact-form-general', function () {
-      include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/general/index.php';
+    add_options_page(__('Settings', 'simple-floating-contact-form'), __('Simple Floating Contact Form', 'simple-floating-contact-form'), 'manage_options', 'simple-floating-contact-form-general', function () {
+      include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/index.php';
     });
   }
 
@@ -75,6 +75,12 @@ class General
     add_option('sfcf-no-styling-option', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-no-styling-option');
 
+    add_option('sfcf-corners-square', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-corners-square');
+
+    add_option('sfcf-placement-left', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-placement-left');
+
     add_option('sfcf-color-toggle', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-toggle');
 
@@ -90,6 +96,9 @@ class General
     add_option('sfcf-color-input-text', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-text');
 
+    add_option('sfcf-color-input-placeholder', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-placeholder');
+
     add_option('sfcf-color-input-text-focus', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-input-text-focus');
 
@@ -104,9 +113,6 @@ class General
 
     add_option('sfcf-color-btn-text', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-text');
-
-    add_option('sfcf-color-btn-border-hover', '');
-    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-btn-border-hover');
 
     add_option('sfcf-color-success-icon', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-color-success-icon');
