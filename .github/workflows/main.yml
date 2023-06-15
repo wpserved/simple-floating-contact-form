@@ -15,39 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Cache Composer packages
-      id: composer-cache
-      uses: actions/cache@v3
-      with:
-        path: vendor
-        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-php-
-
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --ignore-platform-reqs
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Build
-      run: |
-        yarn
-        yarn build
-
-    - name: Upload the build output
-      uses: actions/upload-artifact@v3
-      with:
-        name: build-output
-        path: build/
-
-    - name: Download the build output
-      uses: actions/download-artifact@v2
-      with:
-        name: build-output
-
     - name: Display structure
       run: ls -R
 
