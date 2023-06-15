@@ -40,7 +40,7 @@ jobs:
     - name: Upload the build output
       uses: actions/upload-artifact@v3
       with:
-        name: plugin-build
+        name: build-output
         path: build/
 
     - name: Download the build output
