@@ -49,3 +49,8 @@ jobs:
       env:
         SLUG: simple-floating-contact-form
         BUILD_DIR: build
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ${{ steps.deploy.outputs.zip-path }}
+        asset_name: ${{ github.event.repository.name }}.zip
+        asset_content_type: application/zip
