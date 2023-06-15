@@ -1,13 +1,13 @@
 # Directories
-app/
-node_modules/
-dist/
-vendor/
-inc/
-resources/
-src/
-vendor/
-webpack/
+app/*
+node_modules/*
+dist/*
+vendor/*
+inc/*
+resources/*
+src/*
+vendor/*
+webpack/*
 build/.gitkeep
 
 .distignore
