@@ -1,0 +1,25 @@
+# Directories
+app/
+node_modules/
+dist/
+vendor/
+inc/
+resources/
+src/
+vendor/
+webpack/
+
+.distignore
+.gitignore
+composer.lock
+LICENSE
+LICENSE.txt
+yarn.lock
+readme.txt
+readme.md
+webpack.build.mix.js
+webpack.mix.js
+composer.json
+package.json
+simple-floating-contact-form.php
+phpcs.xml
