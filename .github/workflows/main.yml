@@ -58,4 +58,4 @@ jobs:
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
         SLUG: simple-floating-contact-form
-        BUILD_DIR: ./build
+        BUILD_DIR: "./build"
