@@ -8,6 +8,7 @@ resources/
 src/
 vendor/
 webpack/
+build/.gitkeep
 
 .distignore
 .gitignore
