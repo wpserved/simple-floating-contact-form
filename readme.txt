@@ -4,7 +4,7 @@ Donate link: https://wpserved.com/
 Tags: contact form, floating form, popup contact form, floating contact form, contact button, simple contact form
 Requires at least: 5.4
 Tested up to: 6.2
-Stable tag: 1.2.8
+Stable tag: 1.2.8.1
 Requires PHP: 7.2
 License: GNU General Public License v3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
