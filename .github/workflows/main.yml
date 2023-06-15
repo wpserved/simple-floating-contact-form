@@ -37,6 +37,20 @@ jobs:
         yarn
         yarn build
 
+    - name: Upload the build output
+      uses: actions/upload-artifact@v3
+      with:
+        name: plugin-build
+        path: build/
+
+    - name: Download the build output
+      uses: actions/download-artifact@v2
+      with:
+        name: build-output
+
+    - name: Display structure
+      run: ls -R
+
     - name: WordPress Plugin Deploy
       id: deploy
       uses: 10up/action-wordpress-plugin-deploy@stable
@@ -48,9 +62,5 @@ jobs:
       uses: actions/upload-release-asset@v1
       env:
         SLUG: simple-floating-contact-form
-        BUILD_DIR: build
       with:
         upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ${{ steps.deploy.outputs.zip-path }}
-        asset_name: ${{ github.event.repository.name }}.zip
-        asset_content_type: application/zip
