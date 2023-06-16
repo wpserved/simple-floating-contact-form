@@ -25,7 +25,7 @@
   "require": {
     "php": ">=7.2",
     "composer/installers": "~1.0",
-    "illuminate/support": "5.6.*",
+    "illuminate/support": "7.4.0",
     "joachim-n/case-converter": "^1.0"
   },
   "require-dev": {
