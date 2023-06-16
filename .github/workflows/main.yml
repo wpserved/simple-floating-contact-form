@@ -25,7 +25,7 @@ jobs:
           ${{ runner.os }}-php-
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --ignore-platform-reqs --no-dev
+      run: composer install --no-dev --ignore-platform-reqs
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
