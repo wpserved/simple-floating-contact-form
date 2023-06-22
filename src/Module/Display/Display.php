@@ -58,6 +58,7 @@ class Display
     $this->notes['input_1'] = get_option('sfcf-form-name-input') ?: __('Name & Surname / Company name', 'simple-floating-contact-form');
     $this->notes['input_2'] = get_option('sfcf-form-email-input') ?: __('E-mail adress', 'simple-floating-contact-form');
     $this->notes['input_3'] = get_option('sfcf-form-email-subject') ?: __('Message Subject', 'simple-floating-contact-form');
+    $this->notes['subject_list'] = get_option('sfcf-form-email-subject-list') ? : __('Message Subject List', 'simple-floating-contact-form');
     $this->notes['input_4'] = get_option('sfcf-form-email-message') ?: __('Your Message', 'simple-floating-contact-form');
     $this->notes['checkbox'] = get_option('sfcf-form-checkbox') ? $this->shortcode->doShortcodesInContent(get_option('sfcf-form-checkbox', '')) : '';
     $this->notes['submit'] = get_option('sfcf-form-submit') ?: __('Send Message', 'simple-floating-contact-form');
