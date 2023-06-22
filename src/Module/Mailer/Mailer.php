@@ -185,7 +185,15 @@ if(!class_exists('Mailer')) {
         $body = str_replace($key, $value, $body);
       }
 
-      $this->messageSubject = $data['subject'];
+      if (! empty($data['subject_list'])) {
+        $this->messageSubject = $data['subject_list'];
+
+        $options = explode(PHP_EOL, get_option('sfcf-form-email-subject-list'));
+        //dopasować value do opcji z adminki
+      } else {
+        $this->messageSubject = $data['subject'];
+      }
+
       $this->headers = '';
       $this->message = $body;
     }
