@@ -180,9 +180,11 @@ $displayOptions = new Display();
             <?php echo wp_kses($this->notes['success_note'], ['b' => [], 'br' => []]); ?>
           </p>
 
-          <a class="sfcf__button" href="<?php echo esc_url($this->notes['success_url']); ?>">
-            <?php echo esc_html($this->notes['success_btn']); ?>
-          </a>
+          <?php if (! empty($this->notes['success_btn']) && ! empty($this->notes['success_url'])) : ?>
+            <a class="sfcf__button" href="<?php echo esc_url($this->notes['success_url']); ?>">
+              <?php echo esc_html($this->notes['success_btn']); ?>
+            </a>
+          <?php endif; ?>
         </footer>
       </div>
     </main>

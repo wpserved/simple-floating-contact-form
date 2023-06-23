@@ -26,7 +26,9 @@
           <input type="text" class="regular-text" id="sfcf-email-recipent" name="sfcf-email-recipent" value="<?php echo esc_attr(get_option('sfcf-email-recipent')); ?>" />
 
           <p class="description">
-            <?php echo esc_html(__('Enter the email address (or several separated by a comma). If you leave this field empty, emails will be send to your website\'s administrator email address.', 'simple-floating-contact-form')); ?>
+            <small>
+              <?php echo esc_html(__('Enter the email address (or several separated by a comma). If you leave this field empty, emails will be send to your website\'s administrator email address.', 'simple-floating-contact-form')); ?>
+            </small>
           </p>
         </fieldset>
       </td>

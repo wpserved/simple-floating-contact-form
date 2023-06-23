@@ -122,7 +122,7 @@
           $default = '#6835CC';
           include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/components/color-input-row.php';
 
-          $label = __('Toggle form text color', 'simple-floating-contact-form');
+          $label = __('Toggle text color', 'simple-floating-contact-form');
           $id = 'sfcf-color-toggler-text';
           $value = $display->printData()['color_toggler_text'];
           $default = '#FFF';

@@ -80,9 +80,19 @@ body {
       }
 
       &__success-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         max-width: 324px;
         max-height: 240px;
         margin: 0 auto 30px auto;
+
+        svg,
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 100%;
+        }
 
         .oval {
           fill: var(--sfcf-success-icon);
