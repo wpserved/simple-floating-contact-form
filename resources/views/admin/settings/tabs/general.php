@@ -163,34 +163,6 @@
         </fieldset>
       </td>
     </tr>
-
-    <tr valign="top">
-      <th scope="row">
-        <label for="sfcf-form-icon">
-          <?php echo esc_html(__('Form icon', 'simple-floating-contact-form')); ?>:
-        </label>
-      </th>
-
-      <td>
-        <fieldset class="sfcf-form-icon__wrapper">
-          <input type="hidden" name="sfcf-form-icon" id="sfcf-form-icon" value="<?php echo esc_attr(get_option('sfcf-form-icon')); ?>"/>
-
-          <input type="button" class="button" id="sfcf-form-icon-btn" value="Upload Image" />
-
-          <?php if (! empty(get_option('sfcf-form-icon'))) : ?>
-            <input type="button" class="button --red" id="sfcf-form-icon-clear" value="Clear" />
-          <?php endif ?>
-
-          <img class="sfcf-form-icon__img" id="sfcf-form-icon-img" src="<?php echo esc_url(get_option('sfcf-form-icon')); ?>" alt="">
-        </fieldset>
-
-        <p class="description">
-          <small>
-            <?php echo esc_html(__('Choose the icon which will occur in the pop up activation button (40px on 40px size, .png or .svg preferred)', 'simple-floating-contact-form')); ?>
-          </small>
-        </p>
-      </td>
-    </tr>
   </table>
 
   <h2 class="title">
@@ -253,34 +225,6 @@
         <fieldset>
           <input type="text" class="regular-text" id="sfcf-success-link" name="sfcf-success-link" value="<?php echo esc_attr(get_option('sfcf-success-link')); ?>" />
         </fieldset>
-      </td>
-    </tr>
-
-    <tr valign="top">
-      <th scope="row">
-        <label for="sfcf-success-icon">
-          <?php echo esc_html(__('Success icon', 'simple-floating-contact-form')); ?>:
-        </label>
-      </th>
-
-      <td>
-        <fieldset class="sfcf-success-icon__wrapper">
-          <input type="hidden" name="sfcf-success-icon" id="sfcf-success-icon" value="<?php echo esc_attr(get_option('sfcf-success-icon')); ?>"/>
-
-          <input type="button" class="button" id="sfcf-success-icon-btn" value="Upload Image" />
-
-          <?php if (! empty(get_option('sfcf-success-icon'))) : ?>
-            <input type="button" class="button --red" id="sfcf-success-icon-clear" value="Clear" />
-          <?php endif ?>
-
-          <img class="sfcf-success-icon__img" id="sfcf-success-icon-img" src="<?php echo esc_url(get_option('sfcf-success-icon')); ?>" alt="">
-        </fieldset>
-
-        <p class="description">
-          <small>
-            <?php echo esc_html(__('Choose the icon which will occur on the success message (324px on 240px size, .png or .svg preferred)', 'simple-floating-contact-form')); ?>
-          </small>
-        </p>
       </td>
     </tr>
   </table>
