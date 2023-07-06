@@ -115,7 +115,22 @@ $displayOptions = new Display();
         <form class="sfcf__form" data-sfcf-form>
           <input class="sfcf__form-field" type="text" name="name" placeholder="<?php echo esc_attr($this->notes['input_1']); ?>" data-required>
           <input class="sfcf__form-field" type="email" name="email" placeholder="<?php echo esc_attr($this->notes['input_2']); ?>" data-required>
-          <input class="sfcf__form-field" type="text" name="subject" placeholder="<?php echo esc_attr($this->notes['input_3']); ?>" data-required>
+          <?php if (! empty($this->notes['subject_list'])) : ?>
+            <?php
+              $options = explode(PHP_EOL, $this->notes['subject_list']);
+            ?>
+            <select class="sfcf__form-field -select" name="subject" id="" placeholder="test" data-required>
+              <option value="" disabled selected hidden>
+                <?php echo esc_attr($this->notes['input_3']); ?>
+              </option>
+
+              <?php foreach ($options as $key=>$option) : ?>
+                <option value="<?php echo $key+1; ?>"><?php echo esc_attr($option); ?></option>
+              <?php endforeach; ?>
+            </select>
+          <?php else : ?>
+            <input class="sfcf__form-field" type="text" name="subject" placeholder="<?php echo esc_attr($this->notes['input_3']); ?>" data-required>
+          <?php endif; ?>
           <textarea class="sfcf__form-field -textarea" rows="5" name="message" placeholder="<?php echo esc_attr($this->notes['input_4']); ?>" data-required></textarea>
 
           <?php if (! empty($this->notes['checkbox'])): ?>

@@ -45,6 +45,9 @@ class General
     add_option('sfcf-form-email-subject', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-form-email-subject');
 
+    add_option('sfcf-form-email-subject-list', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-form-email-subject-list');
+
     add_option('sfcf-form-email-message', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-form-email-message');
 

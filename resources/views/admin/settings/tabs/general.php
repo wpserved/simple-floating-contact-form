@@ -114,6 +114,26 @@
 
     <tr valign="top">
       <th scope="row">
+        <label for="sfcf-form-email-subject-list">
+          <?php echo esc_html(__('Subject List', 'simple-floating-contact-form')); ?>:
+        </label>
+      </th>
+
+      <td>
+        <fieldset>
+          <textarea type="textarea" rows="5" cols="50" id="sfcf-form-email-subject-list" name="sfcf-form-email-subject-list" class="large-text" placeholder="<?php echo __('Define a list of email subjects.', 'simple-floating-contact-form'); ?>"><?php echo esc_textarea(get_option('sfcf-form-email-subject-list')); ?></textarea>
+        </fieldset>
+
+        <p class="description">
+          <small>
+            <?php echo __('Subject field info. Leave empty if you would like to use one classic subject field.', 'simple-floating-contact-form'); ?>
+          </small>
+        </p>
+      </td>
+    </tr>
+
+    <tr valign="top">
+      <th scope="row">
         <label for="sfcf-form-email-message">
           <?php echo esc_html(__('Message label', 'simple-floating-contact-form')); ?>:
         </label>

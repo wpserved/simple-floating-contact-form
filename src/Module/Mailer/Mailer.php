@@ -185,7 +185,15 @@ if(!class_exists('Mailer')) {
         $body = str_replace($key, $value, $body);
       }
 
-      $this->messageSubject = $data['subject'];
+      if (is_numeric($data['subject'])) {
+        $selected = $data['subject'] - 1;
+        $options = explode(PHP_EOL, get_option('sfcf-form-email-subject-list'));
+
+        $this->messageSubject = $options[$selected];
+      } else {
+        $this->messageSubject = $data['subject'];
+      }
+
       $this->headers = '';
       $this->message = $body;
     }
