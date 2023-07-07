@@ -81,6 +81,12 @@ class General
     add_option('sfcf-corners-square', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-corners-square');
 
+    add_option('sfcf-radius-toggler', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-radius-toggler');
+
+    add_option('sfcf-radius-input', '');
+    register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-radius-input');
+
     add_option('sfcf-placement-left', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-placement-left');
 

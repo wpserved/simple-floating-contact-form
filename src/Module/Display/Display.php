@@ -71,6 +71,8 @@ class Display
 
     $this->notes['no_style'] = get_option('sfcf-no-styling-option') ?: 'false';
     $this->notes['square_corners'] = get_option('sfcf-corners-square') ?: 'false';
+    $this->notes['radius_toggler'] = get_option('sfcf-radius-toggler') ?: '32';
+    $this->notes['radius_input'] = get_option('sfcf-radius-input') ?: '20';
     $this->notes['placement_left'] = get_option('sfcf-placement-left') ?: 'false';
     $this->notes['color_toggle'] = get_option('sfcf-color-toggle') ?: '#6835CC';
     $this->notes['color_toggler_text'] = get_option('sfcf-color-toggler-text') ?: '#FFF';

@@ -26,6 +26,15 @@ $displayOptions = new Display();
         --sfcf-success-icon: <?php echo esc_html($this->notes['color_success_icon']); ?>;
       }
     </style>
+
+    <?php if ($this->notes['square_corners'] == "false") : ?>
+      <style scoped>
+        .sfcf {
+          --sfcf-radius-toggler: <?php echo esc_html($this->notes['radius_toggler']); ?>px;
+          --sfcf-radius-input: <?php echo esc_html($this->notes['radius_input']); ?>px;
+        }
+      </style>
+    <?php endif; ?>
   <?php endif; ?>
 
   <?php if ($this->notes['no_style'] == "customizer") : ?>
@@ -52,10 +61,11 @@ $displayOptions = new Display();
   <?php if ($this->notes['square_corners'] == "true") : ?>
     <style scoped>
       .sfcf {
-        --sfcf-radius-huge: 0px;
         --sfcf-radius-big: 0px;
         --sfcf-radius-medium: 0px;
         --sfcf-radius-small: 0px;
+        --sfcf-radius-toggler: 0px;
+        --sfcf-radius-input: 0px;
       }
 
       body #sfcf .sfcf__form-field:not(.-checkbox) {

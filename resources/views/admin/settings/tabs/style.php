@@ -78,6 +78,26 @@
           </tr>
         </table>
 
+        <?php if (get_option('sfcf-corners-square') == "false") : ?>
+          <table class="form-table" role="presentation" data-radius-inputs>
+            <?php
+              $label = __('Toggle border radius in pixels', 'simple-floating-contact-form');
+              $id = 'sfcf-radius-toggler';
+              $value = $display->printData()['radius_toggler'];
+              $default = '0';
+              include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/components/number-input-row.php';
+            ?>
+
+            <?php
+              $label = __('Input border radius in pixels', 'simple-floating-contact-form');
+              $id = 'sfcf-radius-input';
+              $value = $display->printData()['radius_input'];
+              $default = '0';
+              include SIMPLE_FLOATING_CONTACT_FORM_RESOURCES_PATH . 'views/admin/settings/components/number-input-row.php';
+            ?>
+          </table>
+        <?php endif; ?>
+
         <h2 class="title">
           <?php echo esc_html(__('Where to display the icon and the form', 'simple-floating-contact-form')); ?>
         </h2>
