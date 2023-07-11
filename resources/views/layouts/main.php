@@ -115,7 +115,13 @@ $displayOptions = new Display();
         <form class="sfcf__form" data-sfcf-form>
           <input class="sfcf__form-field" type="text" name="name" placeholder="<?php echo esc_attr($this->notes['input_1']); ?>" data-required>
           <input class="sfcf__form-field" type="email" name="email" placeholder="<?php echo esc_attr($this->notes['input_2']); ?>" data-required>
-          <input class="sfcf__form-field" type="text" name="subject" placeholder="<?php echo esc_attr($this->notes['input_3']); ?>" data-required>
+
+          <?php if (apply_filters('sfcf_use_pro', false)): ?>
+            <?php do_action('sfcf_layouts_main_subject-list', $this) ?>
+          <?php else: ?>
+            <input class="sfcf__form-field" type="text" name="subject" placeholder="<?php echo esc_attr($this->notes['input_3']); ?>" data-required>
+          <?php endif; ?>
+
           <textarea class="sfcf__form-field -textarea" rows="5" name="message" placeholder="<?php echo esc_attr($this->notes['input_4']); ?>" data-required></textarea>
 
           <?php if (! empty($this->notes['checkbox'])): ?>

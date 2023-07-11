@@ -134,5 +134,7 @@ class General
 
     add_option('sfcf-display-tags', '');
     register_setting('SIMPLE_FLOATING_CONTACT_FORM_group', 'sfcf-display-tags',);
+
+    do_action('sfcf_settings_pages_general_add_options');
   }
 }
