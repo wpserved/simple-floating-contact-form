@@ -15,7 +15,8 @@ class Init extends Singleton
   {
     $this->addPrivate('Core\\Config');
     $this->addPrivate('Settings\\Settings');
-
     $this->addPrivate('Module\\Module');
+
+    do_action('sfcf_init', $this);
   }
 }
