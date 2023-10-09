@@ -130,7 +130,9 @@ $displayOptions = new Display();
             </fieldset>
           <?php endif; ?>
 
-          <input class="sfcf__button -submit" type="submit" value="<?php echo esc_attr($this->notes['submit']); ?>" />
+          <button class="sfcf__button -submit" type="submit">
+            <?php echo esc_attr($this->notes['submit']); ?>
+          </button>
         </form>
       </div>
 
