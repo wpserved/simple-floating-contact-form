@@ -98,6 +98,8 @@ class Display
       get_option('sfcf-display-categories') ?: array(),
       get_option('sfcf-display-tags') ?: array()
     );
+
+    $this->notes = apply_filters('sfcf_display_data', $this->notes);
   }
 
   public function shouldDisplayPopup()
@@ -166,5 +168,10 @@ class Display
     }
 
     return false;
+  }
+
+  public function getNotes()
+  {
+    return $this->notes;
   }
 }

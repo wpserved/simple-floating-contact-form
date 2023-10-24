@@ -112,6 +112,8 @@
       </td>
     </tr>
 
+    <?php do_action('sfcf_admin_settings_tabs_general_subject-list') ?>
+
     <tr valign="top">
       <th scope="row">
         <label for="sfcf-form-email-message">
