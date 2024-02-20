@@ -75,14 +75,28 @@ body {
       }
 
       &__header {
+        position: static !important;
         margin-top: 5px;
         margin-bottom: 24px;
       }
 
       &__success-icon {
+        display: flex;
+        justify-content: center;
         max-width: 324px;
         max-height: 240px;
         margin: 0 auto 30px auto;
+
+        img {
+          width: 324px;
+          height: 240px;
+          object-fit: contain;
+        }
+
+        svg {
+          width: auto;
+          height: 240px;
+        }
 
         .oval {
           fill: var(--sfcf-success-icon);

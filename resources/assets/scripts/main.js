@@ -81,6 +81,9 @@ jQuery(function($) {
             action: 'sfcf_send_form',
             page : window.location.href,
             inputs: $formData
+          },
+          beforeSend: function() {
+            $(e.originalEvent.submitter).addClass('-submitted');
           }
         })
 

@@ -5,8 +5,9 @@
 
 # Node artifact files
 node_modules/
-dist
-vendor
+dist/*
+build
+vendor/*
 resources/assets/config-local.json
 .cache-loader
 
