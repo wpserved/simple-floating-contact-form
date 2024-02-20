@@ -139,10 +139,13 @@ if(!class_exists('Mailer')) {
     public function messageBody()
     {
       //get custom template for mail
-      ob_start();
-      include get_stylesheet_directory() . '/simple-floating-contact-form/assets/email.php';
-      $messageContent = ob_get_contents();
-      ob_end_clean();
+      $messageContent = '';
+      if(file_exists(get_stylesheet_directory() . '/simple-floating-contact-form/assets/email.php')) {
+        ob_start();
+        include get_stylesheet_directory() . '/simple-floating-contact-form/assets/email.php';
+        $messageContent = ob_get_contents();
+        ob_end_clean();
+      }
 
       if(! empty($messageContent)) {
         return $messageContent;

@@ -7,7 +7,7 @@
  * Author URI: https://wpserved.com/
  * Text Domain: simple-floating-contact-form
  * Domain Path: /resources/lang
- * Version: 1.4.0
+ * Version: 1.4.1
  * Requires at least: 5.4
  * Requires PHP: 7.2
  */
